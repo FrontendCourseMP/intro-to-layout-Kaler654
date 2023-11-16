@@ -76,7 +76,9 @@
 
 .header {}
 
-.header__logo {}
+.header__logo {
+    text-decoration: none;
+}
 
 .header__btn {}
 
@@ -112,6 +114,7 @@
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--text-secondary);
+    text-decoration: none;
 }
 
 .scroll {
@@ -209,6 +212,7 @@
     border-radius: 9px;
     background: #037E8C;
     padding: 5px 10px;
+    text-decoration: none;
 }
 
 .rates__images {}
@@ -382,6 +386,7 @@
     color: #151515;
     font-size: 1.4rem;
     font-weight: 400;
+    text-align: left;
 }
 
 .certificate__btn {
@@ -391,7 +396,10 @@
     border-radius: 9px;
     border: 1.5px solid #037E8C;
     padding: 5px 10px;
+    text-align: left;
+    display: block;
 }
+
 
 
 
@@ -486,7 +494,9 @@
     font-weight: 600;
 }
 
-.contacts__social {}
+.contacts__social {
+    text-decoration: none;
+}
 
 
 
@@ -505,11 +515,12 @@
 
 .footer__item a {
     color: #121214;
+    text-decoration: none;
 }
 
 
 .footer__text {
     color: #787878;
-    font-size: 1.2rem;
+    font-size: 1.2;
     font-weight: 400;
 }
