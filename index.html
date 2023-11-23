@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     styl
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reseter.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>CFMOTO</title>
@@ -14,30 +14,36 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <a href="#" class="header__logo">
-                <img src="#" alt="Логотип">
-            </a>
-            <button class="header__btn">
-                <img src="#" alt="Бургер">
-            </button>
+            <div class="header__container">
+                <a href="#" class="header__logo">
+                    <img src="#" alt="Логотип">
+                </a>
+                <button class="header__btn">
+                    <img src="#" alt="Бургер">
+                </button>
+            </div>
         </header>
 
         <main class="main">
 
             <section class="gallery" id="gallery">
-                <h1 class="gallery__title">Экскурсии на
-                    квадроциклах
-                    в Геленджике</h1>
-                <p class="gallery__text">приезжайте за новыми
-                    ощущениями и эмоциями!</p>
-                <a class="gallery__btn" href="#">
-                    Подобрать маршрут
-                    <img src="#" alt="">
-                </a>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <p class="scroll">scroll</p>
+                <div class="gallery__container">
+                    <h1 class="gallery__title">Экскурсии на
+                        квадроциклах
+                        в Геленджике</h1>
+                    <p class="gallery__text">приезжайте за новыми
+                        ощущениями и эмоциями!</p>
+                    <a class="gallery__btn" href="#">
+                        Подобрать маршрут
+                        <img src="#" alt="">
+                    </a>
+                    <div class="gallery__slides slides">
+                        <button class="gallery__slide slide"></button>
+                        <button class="gallery__slide slide"></button>
+                        <button class="gallery__slide slide"></button>
+                        <p class="scroll">scroll</p>
+                    </div>
+                </div>
             </section>
 
             <section class="advantages">
@@ -72,107 +78,117 @@
             </section>
 
             <section class="routes" id="routes">
-                <h2 class="routes__title">Наши маршруты</h2>
-                <ul class="routes__rates">
-                    <li class="rates__item">
-                        <h3 class="rates__title">БАЗОВЫЙ</h3>
-                        <p class="rates__price">от 4000</p>
-                        <ul class="rates__list">
-                            <li>Время в пути: 1,5 - 2 часа</li>
-                            <li>Расстояние: 20 - 25 км</li>
-                            <li>Сложность: 5***</li>
-                        </ul>
-                        <p class="rates__route">Маршрут</p>
-                        <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                            --Грозовые Ворота - Шашлыки -
-                            Цыгельский водопад (чаша любви) - Форсаж</p>
-                        <button class="rates__btn">Подробнее</button>
-                        <a class="rates__link" href="#">Забронировать</a>
-                        <ul class="rates__images">
-                            <li class="rates__image">
-                                <img src="#" alt="Картинка">
-                            </li>
-                            <li class="rates__image">
-                                <img src="#" alt="Картинка">
-                            </li>
-                            <li class="rates__image">
-                                <img src="#" alt="Картинка">
-                            </li>
-                        </ul>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <p class="scroll">scroll</p>
-                    </li>
-                    <li>
-                        <h3 class="rates__title">РАСШИРЕННЫЙ</h3>
-                        <p class="rates__price">от 16000</p>
-                        <ul class="rates__list">
-                            <li>Время в пути: 6 - 8 часов</li>
-                            <li>Расстояние: 60 - 70 км</li>
-                            <li>Сложность: 5***</li>
-                        </ul>
-                        <p class="rates__route">Маршрут</p>
-                        <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                            --Грозовые Ворота - Шашлыки -
-                            Цыгельский водопад (чаша любви) - Форсаж</p>
-                        <button class="rates__btn">Подробнее</button>
-                        <a class="rates__link" href="#">Забронировать</a>
-                        <ul class="rates__images">
-                            <li class="rates__image">
-                                <img src="#" alt="Картинка">
-                            </li>
-                            <li class="rates__image">
-                                <img src="#" alt="Картинка">
-                            </li>
-                            <li class="rates__image">
-                                <img src="#" alt="Картинка">
-                            </li>
-                        </ul>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <p class="scroll">scroll</p>
-                    </li>
-                    <li>
-                        <h3 class="rates__title">EXPERIENCE</h3>
-                        <p class="rates__price">от 7000</p>
-                        <ul class="rates__list">
-                            <li>Время в пути: 4 часа</li>
-                            <li>Расстояние: 40 - 50 км</li>
-                            <li>Сложность: 5***</li>
-                        </ul>
-                        <p class="rates__route">Маршрут</p>
-                        <p class="rates__description">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио
-                            –Форсаж
-                        </p>
-                        <button class="rates__btn">Подробнее</button>
-                        <a class="rates__link" href="#">Забронировать</a>
-                        <ul class="rates__images">
-                            <li class="rates__image">
-                                <img src="#" alt="Картинка">
-                            </li>
-                            <li class="rates__image">
-                                <img src="#" alt="Картинка">
-                            </li>
-                            <li class="rates__image">
-                                <img src="#" alt="Картинка">
-                            </li>
-                        </ul>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <p class="scroll">scroll</p>
-                    </li>
-                </ul>
+                <div class="routes__container">
+                    <h2 class="routes__title">Наши маршруты</h2>
+                    <ul class="routes__rates">
+                        <li class="rates__item">
+                            <h3 class="rates__title">БАЗОВЫЙ</h3>
+                            <p class="rates__price">от 4000</p>
+                            <ul class="rates__list">
+                                <li>Время в пути: 1,5 - 2 часа</li>
+                                <li>Расстояние: 20 - 25 км</li>
+                                <li>Сложность: 5***</li>
+                            </ul>
+                            <p class="rates__route">Маршрут</p>
+                            <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
+                                --Грозовые Ворота - Шашлыки -
+                                Цыгельский водопад (чаша любви) - Форсаж</p>
+                            <button class="rates__btn">Подробнее</button>
+                            <a class="rates__link" href="#">Забронировать</a>
+                            <ul class="rates__images">
+                                <li class="rates__image">
+                                    <img src="#" alt="Картинка">
+                                </li>
+                                <li class="rates__image">
+                                    <img src="#" alt="Картинка">
+                                </li>
+                                <li class="rates__image">
+                                    <img src="#" alt="Картинка">
+                                </li>
+                            </ul>
+                            <div class="routes__slides slides">
+                                <button class="routes__slide slide"></button>
+                                <button class="routes__slide slide"></button>
+                                <button class="routes__slide slide"></button>
+                                <p class="scroll">scroll</p>
+                            </div>
+                        </li>
+                        <li class="rates__item">
+                            <h3 class="rates__title">РАСШИРЕННЫЙ</h3>
+                            <p class="rates__price">от 16000</p>
+                            <ul class="rates__list">
+                                <li>Время в пути: 6 - 8 часов</li>
+                                <li>Расстояние: 60 - 70 км</li>
+                                <li>Сложность: 5***</li>
+                            </ul>
+                            <p class="rates__route">Маршрут</p>
+                            <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
+                                --Грозовые Ворота - Шашлыки -
+                                Цыгельский водопад (чаша любви) - Форсаж</p>
+                            <button class="rates__btn">Подробнее</button>
+                            <a class="rates__link" href="#">Забронировать</a>
+                            <ul class="rates__images">
+                                <li class="rates__image">
+                                    <img src="#" alt="Картинка">
+                                </li>
+                                <li class="rates__image">
+                                    <img src="#" alt="Картинка">
+                                </li>
+                                <li class="rates__image">
+                                    <img src="#" alt="Картинка">
+                                </li>
+                            </ul>
+                            <div class="routes__slides slides">
+                                <button class="routes__slide slide"></button>
+                                <button class="routes__slide slide"></button>
+                                <button class="routes__slide slide"></button>
+                                <p class="scroll">scroll</p>
+                            </div>
+                        </li>
+                        <li class="rates__item">
+                            <h3 class="rates__title">EXPERIENCE</h3>
+                            <p class="rates__price">от 7000</p>
+                            <ul class="rates__list">
+                                <li>Время в пути: 4 часа</li>
+                                <li>Расстояние: 40 - 50 км</li>
+                                <li>Сложность: 5***</li>
+                            </ul>
+                            <p class="rates__route">Маршрут</p>
+                            <p class="rates__description">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио
+                                –Форсаж
+                            </p>
+                            <button class="rates__btn">Подробнее</button>
+                            <a class="rates__link" href="#">Забронировать</a>
+                            <ul class="rates__images">
+                                <li class="rates__image">
+                                    <img src="#" alt="Картинка">
+                                </li>
+                                <li class="rates__image">
+                                    <img src="#" alt="Картинка">
+                                </li>
+                                <li class="rates__image">
+                                    <img src="#" alt="Картинка">
+                                </li>
+                            </ul>
+                            <div class="routes__slides slides">
+                                <button class="routes__slide slide"></button>
+                                <button class="routes__slide slide"></button>
+                                <button class="routes__slide slide"></button>
+                                <p class="scroll">scroll</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section class="testing">
-                <h3 class="testing__title">Затрудняетесь выбрать
-                    маршрут?</h3>
-                <p class="testing__text">Пройдите тест и мы поможем вам подобрать оптимальную
-                    под вас экскурсию</p>
-                <button class="testing__btn">Начать тест</button>
+                <div class="testing__container">
+                    <h3 class="testing__title">Затрудняетесь выбрать
+                        маршрут?</h3>
+                    <p class="testing__text">Пройдите тест и мы поможем вам подобрать оптимальную
+                        под вас экскурсию</p>
+                    <button class="testing__btn">Начать тест</button>
+                </div>
             </section>
 
             <section class="team">

@@ -74,11 +74,19 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.header {}
-
-.header__logo {
-    text-decoration: none;
+.header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
+.header__container {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {}
 
 .header__btn {}
 
@@ -98,16 +106,27 @@
     background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
     font-family: 'Montserrat', sans-serif;
     color: var(--text-secondary);
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__container {
+    width: 294px;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 30px 100px 30px;
 }
 
 .gallery__title {
     font-size: 3.6rem;
     font-weight: 700;
+    margin-bottom: 16px;
 }
 
 .gallery__text {
     font-size: 1.6rem;
     font-weight: 500;
+    margin-bottom: 42px;
 }
 
 .gallery__btn {
@@ -115,11 +134,31 @@
     font-weight: 600;
     color: var(--text-secondary);
     text-decoration: none;
+    margin-bottom: 100px;
 }
 
+.slides {
+    display: flex;
+}
+
+.slide {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+.slide:first-child {
+    background-color: #037E8C;
+}
+
+
+
 .scroll {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 300;
+    margin-left: 90px;
 }
 
 
@@ -129,19 +168,33 @@
     color: var(--text-main);
     background-color: var(--bg-main);
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 44px;
 }
 
 
-.advantages__list {}
+.advantages__list {
+    width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-.advantages__item {}
+.advantages__item {
+    width: 160px;
+}
 
 
-.item__icon {}
+.item__icon {
+    margin-bottom: 15px;
+}
 
 .item__title {
     font-size: 1.6rem;
     font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .item__text {
@@ -157,41 +210,68 @@
     color: var(--text-main);
     background-color: var(--bg-secondary);
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.routes__container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 45px;
 }
 
 .routes__title {
-    font-size: 2.4.rem;
+    font-size: 2.4rem;
     font-weight: 700;
+    align-self: center;
+    margin-bottom: 36px;
 }
 
 .routes__rates {}
 
-.rates__item {}
+.rates__item {
+    margin-bottom: 65px;
+}
+
+.rates__item:last-child {
+    margin-bottom: 0px;
+}
 
 .rates__title {
     font-size: 2.4rem;
     font-weight: 600;
+    margin-bottom: 6px;
 }
 
 .rates__price {
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 17px;
 }
 
 .rates__list {
     font-size: 1.4rem;
     font-weight: 600;
+    margin-bottom: 11px;
+}
+
+.rates__list li {
+    margin-bottom: 7px;
 }
 
 .rates__route {
     font-size: 1.6rem;
     font-weight: 600;
+    margin-bottom: 9px;
 }
 
 .rates__description {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2.24rem;
+    margin-bottom: 28px;
 }
 
 .rates__btn {
@@ -201,23 +281,34 @@
     text-align: center;
     border-radius: 9px;
     border: 1.5px solid #037E8C;
-    padding: 5px 10px;
+    padding: 10px 30px;
 }
 
 .rates__link {
     color: #FFF;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
     border-radius: 9px;
     background: #037E8C;
-    padding: 5px 10px;
+    padding: 11px 15px;
     text-decoration: none;
 }
 
-.rates__images {}
+.rates__images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
 .rates__image {}
+
+.routes__slides {}
+
+.routes__slide {
+    background-color: #121214;
+}
 
 
 
@@ -228,16 +319,26 @@
     background-color: #121214;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.testing__container {
+    width: 320px;
+    margin-top: 45px;
+    margin-bottom: 50px;
 }
 
 .testing__title {
     font-size: 2.4rem;
     font-weight: 700;
+    margin-bottom: 19px;
 }
 
 .testing__text {
     font-size: 1.6rem;
     font-weight: 500;
+    margin-bottom: 33px;
 }
 
 .testing__btn {
@@ -246,7 +347,7 @@
     font-size: 1.4rem;
     font-weight: 600;
     color: #fff;
-    padding: 5px 10px;
+    padding: 14px 44px;
 }
 
 
