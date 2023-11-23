@@ -1,0 +1,526 @@
+/* montserrat-300 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-500 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-600 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-800 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+:root {
+    font-size: 62.5%;
+    --bg-main: #ffffff;
+    --bg-secondary: #f4f4f4;
+    --text-main: #121214;
+    --text-secondary: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {}
+
+.header__logo {
+    text-decoration: none;
+}
+
+.header__btn {}
+
+
+.wrapper {
+    max-width: 360px;
+    margin: 0px auto;
+}
+
+.main {}
+
+
+
+
+
+.gallery {
+    background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-secondary);
+}
+
+.gallery__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.gallery__text {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.gallery__btn {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.scroll {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+
+
+
+.advantages {
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.advantages__list {}
+
+.advantages__item {}
+
+
+.item__icon {}
+
+.item__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.item__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+
+
+
+.routes {
+    color: var(--text-main);
+    background-color: var(--bg-secondary);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.routes__title {
+    font-size: 2.4.rem;
+    font-weight: 700;
+}
+
+.routes__rates {}
+
+.rates__item {}
+
+.rates__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.rates__price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rates__list {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.rates__route {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.rates__description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.24rem;
+}
+
+.rates__btn {
+    color: #037E8C;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 9px;
+    border: 1.5px solid #037E8C;
+    padding: 5px 10px;
+}
+
+.rates__link {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 9px;
+    background: #037E8C;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.rates__images {}
+
+.rates__image {}
+
+
+
+
+
+.testing {
+    color: var(--text-secondary);
+    background-color: #121214;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.testing__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.testing__text {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.testing__btn {
+    border-radius: 9px;
+    background: #037E8C;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+
+
+
+
+.team {
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.team__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.team__list {}
+
+.team__item {}
+
+.team__photo {}
+
+.team__name {
+    color: #037E8C;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.team__job {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+
+.conditions {
+    color: var(--text-main);
+    background-color: var(--bg-secondary);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conditions__title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.conditions__list {}
+
+.conditions__item {
+    margin: 30px 10px;
+    background-color: var(--bg-main);
+}
+
+.conditions__icon {}
+
+.conditions__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.68rem;
+}
+
+
+
+
+.special {
+    background-color: var(--bg-main);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.special__title {
+    color: #373737;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.special__list {}
+
+.special__item {}
+
+.special__img {}
+
+.special__sale {
+    color: #037E8C;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.special__text {
+    color: #037E8C;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.special__description {
+    color: #373737;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.special__btn {
+    color: #037E8C;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 9px;
+    border: 1.5px solid #037E8C;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+
+
+
+.certificate {
+    background-color: var(--bg-secondary);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.certificate__title {
+    color: #151515;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.certificate__text {
+    color: #037E8C;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.certificate__img {}
+
+.certificate__description {
+    color: #151515;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.certificate__btn {
+    color: #037E8C;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 9px;
+    border: 1.5px solid #037E8C;
+    padding: 5px 10px;
+    text-align: left;
+    display: block;
+}
+
+
+
+
+
+.questions {
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.questions__title {
+    color: #393939;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.questions__list {}
+
+.questions__item {}
+
+.questions__name {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.questions__answer {
+    color: #393939;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.questions__img {}
+
+.questions__text {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.questions__description {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.questions__btn {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 9px;
+    background: #037E8C;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+
+
+
+
+.contacts {
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacts__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.contacts__map {}
+
+.contacts__list {}
+
+.contacts__item {}
+
+.contacts__img {}
+
+.contacts__text {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.contacts__socials {
+    color: #121214;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.contacts__social {
+    text-decoration: none;
+}
+
+
+
+.footer {}
+
+.footer__logo {}
+
+.footer__list {}
+
+.footer__item {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2.24rem;
+    text-transform: uppercase;
+}
+
+.footer__item a {
+    color: #121214;
+    text-decoration: none;
+}
+
+
+.footer__text {
+    color: #787878;
+    font-size: 1.2;
+    font-weight: 400;
+}
