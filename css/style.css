@@ -135,7 +135,12 @@
     color: var(--text-secondary);
     text-decoration: none;
     margin-bottom: 100px;
+    padding: 15px;
+    background: #037E8C;
+    border-radius: 9px;
+    width: 220px;
 }
+
 
 .slides {
     display: flex;
