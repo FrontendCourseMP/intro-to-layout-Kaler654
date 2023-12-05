@@ -15,16 +15,15 @@
         <header class="header">
             <div class="header__container">
                 <a href="#" class="header__logo">
-                    <img src="#" alt="Логотип">
+                    <img src="/img/header_logo.svg" alt="Логотип">
                 </a>
                 <button class="header__btn">
-                    <img src="#" alt="Бургер">
+                    <img src="/img/header_menu.svg" alt="Бургер">
                 </button>
             </div>
         </header>
 
         <main class="main">
-
             <section class="gallery" id="gallery">
                 <div class="gallery__container">
                     <h1 class="gallery__title">Экскурсии на
@@ -34,12 +33,16 @@
                         ощущениями и эмоциями!</p>
                     <a class="gallery__btn" href="#">
                         Подобрать маршрут
-                        <img src="#" alt="">
+                        <img src="img/gallery_arrow.svg" alt="">
                     </a>
                     <div class="gallery__slides slides">
                         <button class="gallery__slide slide"></button>
                         <button class="gallery__slide slide"></button>
                         <button class="gallery__slide slide"></button>
+                        <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line x1="54" y1="0.5" y2="0.5" stroke="white" />
+                        </svg>
                         <p class="scroll">scroll</p>
                     </div>
                 </div>
@@ -48,7 +51,7 @@
             <section class="advantages">
                 <ul class="advantages__list">
                     <li class="advantages__item">
-                        <img class="item__icon" src="#" alt="Иконка">
+                        <img class="item__icon" src="img/advantages_icon1.svg" alt="Иконка">
                         <h3 class="item__title">Увлекательные экскурсии</h3>
                         <p class="item__text">
                             Маршруты от лесных дорожек
@@ -56,12 +59,12 @@
                         </p>
                     </li>
                     <li class="advantages__item">
-                        <img class="item__icon" src="#" alt="Иконка">
+                        <img class="item__icon" src="img/advantages_icon2.svg" alt="Иконка">
                         <h3 class="item__title">Надежная техника</h3>
                         <p class="item__text">18 квадроциклов всех японских брендов</p>
                     </li>
                     <li class="advantages__item">
-                        <img class="item__icon" src="#" alt="Иконка">
+                        <img class="item__icon" src="img/advantages_icon3.svg" alt="Иконка">
                         <h3 class="item__title">Экипировка бесплатно</h3>
                         <p class="item__text">
                             Необходимая экипировка
@@ -69,7 +72,7 @@
                         </p>
                     </li>
                     <li class="advantages__item">
-                        <img class="item__icon" src="#" alt="Иконка">
+                        <img class="item__icon" src="img/advantages_icon4.svg" alt="Иконка">
                         <h3 class="item__title">Опытные инструктора</h3>
                         <p class="item__text">Обеспечат полную безопасность Вашего отдыха</p>
                     </li>
@@ -84,31 +87,46 @@
                             <h3 class="rates__title">БАЗОВЫЙ</h3>
                             <p class="rates__price">от 4000</p>
                             <ul class="rates__list">
-                                <li>Время в пути: 1,5 - 2 часа</li>
-                                <li>Расстояние: 20 - 25 км</li>
-                                <li>Сложность: 5***</li>
+                                <li>
+                                    <img src="img/routes_time.svg" alt="время">
+                                    <p><span class="uppercase">Время в пути:</span> 1,5 - 2 часа</p>
+                                </li>
+                                <li>
+                                    <img src="img/routes_point.svg" alt="точка">
+                                    <p><span class="uppercase">Расстояние:</span> 20 - 25 км</p>
+                                </li>
+                                <li>
+                                    <img src="img/routes_star.svg" alt="звезда">
+                                    <p><span class="uppercase">Сложность:</span> 5***</p>
+                                </li>
                             </ul>
                             <p class="rates__route">Маршрут</p>
                             <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
                                 --Грозовые Ворота - Шашлыки -
                                 Цыгельский водопад (чаша любви) - Форсаж</p>
-                            <button class="rates__btn">Подробнее</button>
-                            <a class="rates__link" href="#">Забронировать</a>
+                            <div class="rates__wrapper">
+                                <button class="rates__btn">Подробнее</button>
+                                <a class="rates__link" href="#">Забронировать</a>
+                            </div>
                             <ul class="rates__images">
                                 <li class="rates__image">
-                                    <img src="#" alt="Картинка">
+                                    <img src="img/routes_car1.jpg" alt="Картинка">
                                 </li>
                                 <li class="rates__image">
-                                    <img src="#" alt="Картинка">
+                                    <img src="img/routes_car2.jpg" alt="Картинка">
                                 </li>
                                 <li class="rates__image">
-                                    <img src="#" alt="Картинка">
+                                    <img src="img/routes_car3.jpg" alt="Картинка">
                                 </li>
                             </ul>
                             <div class="routes__slides slides">
                                 <button class="routes__slide slide"></button>
                                 <button class="routes__slide slide"></button>
                                 <button class="routes__slide slide"></button>
+                                <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
+                                </svg>
                                 <p class="scroll">scroll</p>
                             </div>
                         </li>
@@ -116,31 +134,46 @@
                             <h3 class="rates__title">РАСШИРЕННЫЙ</h3>
                             <p class="rates__price">от 16000</p>
                             <ul class="rates__list">
-                                <li>Время в пути: 6 - 8 часов</li>
-                                <li>Расстояние: 60 - 70 км</li>
-                                <li>Сложность: 5***</li>
+                                <li>
+                                    <img src="img/routes_time.svg" alt="время">
+                                    <p><span class="uppercase">Время в пути:</span> 6 - 8 часов</p>
+                                </li>
+                                <li>
+                                    <img src="img/routes_point.svg" alt="точка">
+                                    <p><span class="uppercase">Расстояние:</span> 60 - 70 км</p>
+                                </li>
+                                <li>
+                                    <img src="img/routes_star.svg" alt="звезда">
+                                    <p><span class="uppercase">Сложность:</span> 5***</p>
+                                </li>
                             </ul>
                             <p class="rates__route">Маршрут</p>
                             <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
                                 --Грозовые Ворота - Шашлыки -
                                 Цыгельский водопад (чаша любви) - Форсаж</p>
-                            <button class="rates__btn">Подробнее</button>
-                            <a class="rates__link" href="#">Забронировать</a>
+                            <div class="rates__wrapper">
+                                <button class="rates__btn">Подробнее</button>
+                                <a class="rates__link" href="#">Забронировать</a>
+                            </div>
                             <ul class="rates__images">
                                 <li class="rates__image">
-                                    <img src="#" alt="Картинка">
+                                    <img src="img/routes_car4.jpg" alt="Картинка">
                                 </li>
                                 <li class="rates__image">
-                                    <img src="#" alt="Картинка">
+                                    <img src="img/routes_car5.jpg" alt="Картинка">
                                 </li>
                                 <li class="rates__image">
-                                    <img src="#" alt="Картинка">
+                                    <img src="img/routes_car6.jpg" alt="Картинка">
                                 </li>
                             </ul>
                             <div class="routes__slides slides">
                                 <button class="routes__slide slide"></button>
                                 <button class="routes__slide slide"></button>
                                 <button class="routes__slide slide"></button>
+                                <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
+                                </svg>
                                 <p class="scroll">scroll</p>
                             </div>
                         </li>
@@ -148,31 +181,46 @@
                             <h3 class="rates__title">EXPERIENCE</h3>
                             <p class="rates__price">от 7000</p>
                             <ul class="rates__list">
-                                <li>Время в пути: 4 часа</li>
-                                <li>Расстояние: 40 - 50 км</li>
-                                <li>Сложность: 5***</li>
+                                <li>
+                                    <img src="img/routes_time.svg" alt="звезда">
+                                    <p><span class="uppercase">Время в пути:</span> 4 часа</p>
+                                </li>
+                                <li>
+                                    <img src="img/routes_point.svg" alt="звезда">
+                                    <p<span class="uppercase">Расстояние:</span> 40 - 50 км</p>
+                                </li>
+                                <li>
+                                    <img src="img/routes_star.svg" alt="звезда">
+                                    <p><span class="uppercase">Сложность:</span> 5***</p>
+                                </li>
                             </ul>
                             <p class="rates__route">Маршрут</p>
                             <p class="rates__description">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио
                                 –Форсаж
                             </p>
-                            <button class="rates__btn">Подробнее</button>
-                            <a class="rates__link" href="#">Забронировать</a>
+                            <div class="rates__wrapper">
+                                <button class="rates__btn">Подробнее</button>
+                                <a class="rates__link" href="#">Забронировать</a>
+                            </div>
                             <ul class="rates__images">
                                 <li class="rates__image">
-                                    <img src="#" alt="Картинка">
+                                    <img src="img/routes_car7.jpg" alt="Картинка">
                                 </li>
                                 <li class="rates__image">
-                                    <img src="#" alt="Картинка">
+                                    <img src="img/routes_car8.jpg" alt="Картинка">
                                 </li>
                                 <li class="rates__image">
-                                    <img src="#" alt="Картинка">
+                                    <img src="img/routes_car9.jpg" alt="Картинка">
                                 </li>
                             </ul>
                             <div class="routes__slides slides">
                                 <button class="routes__slide slide"></button>
                                 <button class="routes__slide slide"></button>
                                 <button class="routes__slide slide"></button>
+                                <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
+                                </svg>
                                 <p class="scroll">scroll</p>
                             </div>
                         </li>
@@ -195,22 +243,22 @@
                     <h2 class="team__title">Наша команда</h2>
                     <ul class="team__list">
                         <li class="team__item">
-                            <img class="team__photo" src="#" alt="Фото">
+                            <img class="team__photo" src="img/team1.jpg" alt="Фото">
                             <h3 class="team__name">Юлиана</h3>
                             <p class="team__job">руководитель</p>
                         </li>
                         <li class="team__item">
-                            <img class="team__photo" src="#" alt="Фото">
+                            <img class="team__photo" src="img/team2.jpg" alt="Фото">
                             <h3 class="team__name">Максим</h3>
                             <p class="team__job">старший инструктор</p>
                         </li>
                         <li class="team__item">
-                            <img class="team__photo" src="#" alt="Фото">
+                            <img class="team__photo" src="img/team3.jpg" alt="Фото">
                             <h3 class="team__name">Кристина</h3>
                             <p class="team__job">администратор</p>
                         </li>
                         <li class="team__item">
-                            <img class="team__photo" src="#" alt="Фото">
+                            <img class="team__photo" src="img/team4.jpg" alt="Фото">
                             <h3 class="team__name">Юрий</h3>
                             <p class="team__job">старший механик</p>
                         </li>
@@ -268,18 +316,23 @@
                     <h2 class="special__title">Спецпредложения</h2>
                     <ul class="special__list">
                         <li class="special__item">
-                            <img class="special__img" src="#" alt="Картинка">
-                            <p class="special__sale">Скидка 10%</p>
-                            <p class="special__text">на День Рождения</p>
-                            <p class="special__description">в честь Дня Рождения - дарим имениннику
-                                скидку 10%</p>
+                            <img class="special__img" src="img/special1.jpg" alt="Картинка">
+                            <div class="special__wrapper-text">
+                                <p class="special__sale">Скидка 10%</p>
+                                <p class="special__text">на День Рождения</p>
+                                <p class="special__description">в честь Дня Рождения - дарим имениннику
+                                    скидку 10%</p>
+                            </div>
                         </li>
                         <li class="special__item">
-                            <img class="special__img" src="#" alt="Картинка">
-                            <p class="special__sale">Скидка 10%</p>
-                            <p class="special__description">клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина
-                            </p>
-                            <button class="special__btn">Подробнее</button>
+                            <img class="special__img" src="img/special2.jpg" alt="Картинка">
+                            <div class="special__wrapper-text">
+                                <p class="special__sale">Скидка 10%</p>
+                                <p class="special__description">клиентам Ex-Kuban на услуги Загородного клуба Ягода
+                                    Малина
+                                </p>
+                                <button class="special__btn">Подробнее</button>
+                            </div>
                         </li>
                     </ul>
                 </div>
