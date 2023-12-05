@@ -635,6 +635,7 @@
 
 .certificate {
     background-color: var(--bg-secondary);
+    background-image: url("../img/certificate_background.svg");
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
@@ -842,26 +843,34 @@ summary::marker {
 .contacts__item {
     display: flex;
     margin-bottom: 15px;
-    position: relative;
+    align-items: center;
+}
+
+.contacts__img {
+    margin-right: 11px;
 }
 
 .contacts__text {
     font-size: 1.6rem;
     font-weight: 400;
+    line-height: 2.08rem;
 }
 
 .socials__wrapper {
     display: flex;
+    align-items: center;
 }
 
 .contacts__socials {
     color: #121214;
     font-size: 1.8rem;
     font-weight: 600;
+    margin-right: 13px;
 }
 
 .contacts__social {
     text-decoration: none;
+    margin-right: 12px;
 }
 
 
@@ -905,6 +914,7 @@ summary::marker {
     padding-top: 10px;
     padding-bottom: 15px;
     position: relative;
+    align-items: start;
 }
 
 .footer__wrapper::before {
