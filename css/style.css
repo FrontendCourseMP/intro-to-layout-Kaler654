@@ -478,6 +478,10 @@
     border-radius: 0.9rem 0.9rem 0 0;
 }
 
+.team__photo img {
+    max-width: 100%;
+}
+
 .team__name {
     color: #037E8C;
     font-size: 1.8rem;
@@ -497,6 +501,7 @@
 .conditions {
     color: var(--text-main);
     background-color: var(--bg-secondary);
+    background-image: url("../img/conditions_background.svg");
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
@@ -594,6 +599,10 @@
     border-radius: 9px;
 }
 
+.special__img img {
+    max-width: 100%;
+}
+
 .special__wrapper-text {
     padding-left: 20px;
     padding-right: 90px;
@@ -664,8 +673,51 @@
     text-align: center;
 }
 
-.certificate__img {
+.certificate__card {
     margin-bottom: 25px;
+}
+
+.card {
+    width: 340px;
+    height: 190px;
+    border-radius: 9px;
+    background: #373737;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../img/certificate_vector.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+
+.card__bow {}
+
+.card__title {
+    color: #121214;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3.9rem;
+}
+
+.card__text {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.232rem;
+    width: 220px;
+    padding-left: 22px;
+}
+
+.card__logo {}
+
+.card__description {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.82rem;
+    padding-left: 22px;
+    padding-bottom: 22px;
 }
 
 .certificate__description {
@@ -684,6 +736,7 @@
     border: 1.5px solid #037E8C;
     padding: 14px 22px;
     display: block;
+    background-color: transparent;
 }
 
 
@@ -732,6 +785,7 @@
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2rem;
+    margin-top: 5px;
 }
 
 
@@ -792,7 +846,7 @@ summary::marker {
 }
 
 .accordion__item {
-    padding: 15px 10px;
+    padding: 18px 12px;
 }
 
 
@@ -940,7 +994,7 @@ summary::marker {
 
 .footer__text {
     color: #787878;
-    font-size: 1.2;
+    font-size: 1.2rem;
     font-weight: 400;
     margin-top: 10px;
 }
