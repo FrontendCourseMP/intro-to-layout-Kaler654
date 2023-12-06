@@ -76,25 +76,33 @@
 
 
 .wrapper {
-    max-width: 360px;
-    margin: 0px auto;
-    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
 }
 
 
 .header {
-    text-align: center;
-    display: flex;
-    justify-content: center;
     position: absolute;
     width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 .header__container {
-    width: 320px;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+    max-width: 85rem;
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header__logo {}
@@ -125,10 +133,11 @@
     color: var(--text-secondary);
     display: flex;
     justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .gallery__container {
-    width: 294px;
     display: flex;
     flex-direction: column;
     margin: 150px 30px 100px 30px;
@@ -203,14 +212,18 @@
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 
 .advantages__list {
-    width: 340px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 20px;
 }
 
 .advantages__item {
@@ -244,15 +257,16 @@
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 .routes__container {
-    width: 340px;
+    max-width: 85rem;
     display: flex;
     flex-direction: column;
     margin-top: 35px;
     margin-bottom: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .routes__title {
@@ -366,13 +380,16 @@
 .rates__wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: 35rem;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 
 .rates__images {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 40px;
+    overflow: hidden;
     margin-bottom: 20px;
 }
 
@@ -382,6 +399,8 @@
 
 .rates__image img {
     border-radius: 0.9rem;
+    max-width: 100%;
+
 }
 
 
@@ -403,10 +422,12 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .testing__container {
-    width: 320px;
+    max-width: 85rem;
     margin-top: 45px;
     margin-bottom: 50px;
 }
@@ -445,12 +466,14 @@
 }
 
 .team__container {
-    width: 340px;
+    max-width: 85rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 90px;
     margin-bottom: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .team__title {
@@ -463,6 +486,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 20px;
 }
 
 .team__item {
@@ -508,9 +532,11 @@
 }
 
 .conditions__container {
-    width: 340px;
+    max-width: 85rem;
     margin-top: 35px;
     margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .conditions__title {
@@ -542,7 +568,7 @@
     background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 5px;
 }
 
@@ -563,9 +589,9 @@
 }
 
 .special__container {
-    width: 335px;
     margin-top: 25px;
-    margin-bottom: 60px
+    margin-bottom: 60px;
+    max-width: 85rem;
 }
 
 .special__title {
@@ -578,8 +604,9 @@
 
 .special__list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10rem;
 }
 
 .special__item {
@@ -649,12 +676,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .certificate__container {
-    width: 340px;
+    max-width: 85rem;
     margin-top: 36px;
     margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .certificate__title {
@@ -662,6 +695,7 @@
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 7px;
+    text-align: center;
 }
 
 .certificate__text {
@@ -673,9 +707,6 @@
     text-align: center;
 }
 
-.certificate__card {
-    margin-bottom: 25px;
-}
 
 .card {
     width: 340px;
@@ -688,8 +719,13 @@
     background-image: url("../img/certificate_vector.svg");
     background-position: bottom right;
     background-repeat: no-repeat;
+    margin: 0px auto;
 }
 
+
+.certificate__card {
+    margin-bottom: 25px;
+}
 
 .card__bow {}
 
@@ -737,6 +773,7 @@
     padding: 14px 22px;
     display: block;
     background-color: transparent;
+    max-width: 30rem;
 }
 
 
@@ -747,14 +784,14 @@
     color: var(--text-main);
     background-color: var(--bg-main);
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .questions__container {
-    width: 340px;
+    max-width: 85rem;
+    margin: 0px auto;
     margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .questions__title {
@@ -797,12 +834,14 @@
 }
 
 .feedback__container {
-    width: 340px;
+    max-width: 85rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .feedback__img {
@@ -855,18 +894,18 @@ summary::marker {
     color: var(--text-main);
     background-color: var(--bg-main);
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .contacts__container {
-    width: 340px;
+    max-width: 85rem;
     display: flex;
     flex-direction: column;
     position: relative;
     padding-top: 10px;
     padding-top: 30px;
+    margin: 0px auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .contacts__container::after {
@@ -885,12 +924,15 @@ summary::marker {
     margin-bottom: 17px;
 }
 
-.contacts__map {}
+.contacts__map {
+    width: 36rem;
+    height: 21.5rem;
+}
 
 .contacts__list {
     margin-top: 17px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 
 }
 
@@ -929,17 +971,16 @@ summary::marker {
 
 
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.footer {}
 
 .footer__container {
-    margin-top: 35px;
-    width: 340px;
+    max-width: 85rem;
     display: flex;
     flex-direction: column;
+    margin: 0px auto;
+    margin-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
