@@ -98,19 +98,19 @@
 .header__container {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 1.0rem;
     max-width: 85rem;
-    margin: 0px auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: .0rem auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .header__logo {}
 
 .header__btn {
-    min-width: 20px;
-    min-height: 20px;
-    padding: 20px 20px;
+    min-width: 2.0rem;
+    min-height: 2.0rem;
+    padding: 2.0rem 2.0rem;
     background-color: transparent;
 }
 
@@ -140,19 +140,19 @@
 .gallery__container {
     display: flex;
     flex-direction: column;
-    margin: 150px 30px 100px 30px;
+    margin: 15.0rem 3.0rem 10.0rem 3.0rem;
 }
 
 .gallery__title {
     font-size: 3.6rem;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
 }
 
 .gallery__text {
     font-size: 1.6rem;
     font-weight: 500;
-    margin-bottom: 42px;
+    margin-bottom: 4.2rem;
 }
 
 .gallery__btn {
@@ -160,11 +160,11 @@
     font-weight: 600;
     color: var(--text-secondary);
     text-decoration: none;
-    margin-bottom: 100px;
-    padding: 10px;
+    margin-bottom: 10.0rem;
+    padding: 1.0rem;
     background: #037E8C;
-    border-radius: 9px;
-    width: 220px;
+    border-radius: .9rem;
+    width: 22.0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,10 +179,10 @@
 
 .slide {
     border-radius: 50%;
-    width: 8px;
-    height: 8px;
+    width: .8rem;
+    height: .8rem;
     background-color: #fff;
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 
 .slide:first-child {
@@ -194,11 +194,11 @@
 .scroll {
     font-size: 1.4rem;
     font-weight: 300;
-    margin-left: 10px;
+    margin-left: 1.0rem;
 }
 
 .line {
-    margin-left: 30px;
+    margin-left: 3.0rem;
 }
 
 
@@ -210,10 +210,10 @@
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 3.0rem;
+    margin-bottom: 2.0rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
 
 }
 
@@ -223,23 +223,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 20px;
+    column-gap: 2.0rem;
 }
 
 .advantages__item {
-    width: 160px;
-    margin-bottom: 25px;
+    width: 16.0rem;
+    margin-bottom: 2.5rem;
 }
 
 
 .item__icon {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .item__title {
     font-size: 1.6rem;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .item__text {
@@ -263,40 +263,40 @@
     max-width: 85rem;
     display: flex;
     flex-direction: column;
-    margin-top: 35px;
-    margin-bottom: 45px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 3.5rem;
+    margin-bottom: 4.5rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
 }
 
 .routes__title {
     font-size: 2.4rem;
     font-weight: 700;
     align-self: center;
-    margin-bottom: 36px;
+    margin-bottom: 3.6rem;
 }
 
 .routes__rates {}
 
 .rates__item {
-    margin-bottom: 65px;
+    margin-bottom: 6.5rem;
 }
 
 .rates__item:last-child {
-    margin-bottom: 0px;
+    margin-bottom: .0rem;
 }
 
 .rates__title {
     font-size: 2.4rem;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: .6rem;
     position: relative;
 }
 
 .rates__title::after {
     content: "";
-    width: 80px;
-    height: 3px;
+    width: 8.0rem;
+    height: .3rem;
     background: #037E8C;
     position: absolute;
     top: 15%;
@@ -304,15 +304,15 @@
 }
 
 .rates__price {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 17px;
+    margin-bottom: 1.7rem;
 }
 
 .rates__list {
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 11px;
+    margin-bottom: 1.1rem;
 }
 
 .uppercase {
@@ -321,31 +321,31 @@
 }
 
 .rates__list li {
-    margin-bottom: 7px;
+    margin-bottom: .7rem;
     display: flex;
 }
 
 .rates__list>li>img {
-    margin-right: 10px;
+    margin-right: 1.0rem;
 }
 
 
 .rates__route {
     font-size: 1.6rem;
     font-weight: 600;
-    margin-bottom: 9px;
+    margin-bottom: .9rem;
     text-transform: uppercase;
     position: relative;
 }
 
 .rates__route::after {
     content: "";
-    width: 25px;
-    height: 25px;
+    width: 2.5rem;
+    height: 2.5rem;
     background-image: url("../img/routes_way.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: -3px;
+    top: -.3rem;
     left: 10rem;
 }
 
@@ -353,7 +353,7 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2.24rem;
-    margin-bottom: 28px;
+    margin-bottom: 2.8rem;
 }
 
 .rates__btn {
@@ -361,9 +361,9 @@
     font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
-    border-radius: 9px;
+    border-radius: .9rem;
     border: 1.5px solid #037E8C;
-    padding: 11px 39px;
+    padding: 1.1rem 3.9rem;
 }
 
 .rates__link {
@@ -371,9 +371,9 @@
     font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
-    border-radius: 9px;
+    border-radius: .9rem;
     background: #037E8C;
-    padding: 11px 25px;
+    padding: 1.1rem 2.5rem;
     text-decoration: none;
 }
 
@@ -382,19 +382,19 @@
     justify-content: space-between;
     max-width: 35rem;
     flex-wrap: wrap;
-    row-gap: 15px;
+    row-gap: 1.5rem;
 }
 
 .rates__images {
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 4.0rem;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
 }
 
 .rates__image {
-    margin-right: 10px;
+    margin-right: 1.0rem;
 }
 
 .rates__image img {
@@ -428,29 +428,29 @@
 
 .testing__container {
     max-width: 85rem;
-    margin-top: 45px;
-    margin-bottom: 50px;
+    margin-top: 4.5rem;
+    margin-bottom: 5.0rem;
 }
 
 .testing__title {
     font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 19px;
+    margin-bottom: 1.9rem;
 }
 
 .testing__text {
     font-size: 1.6rem;
     font-weight: 500;
-    margin-bottom: 33px;
+    margin-bottom: 3.3rem;
 }
 
 .testing__btn {
-    border-radius: 9px;
+    border-radius: .9rem;
     background: #037E8C;
     font-size: 1.4rem;
     font-weight: 600;
     color: #fff;
-    padding: 14px 44px;
+    padding: 1.4rem 4.4rem;
 }
 
 
@@ -470,35 +470,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
-    margin-bottom: 35px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 9.0rem;
+    margin-bottom: 3.5rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
 }
 
 .team__title {
     font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
 }
 
 .team__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 20px;
+    column-gap: 2.0rem;
 }
 
 .team__item {
-    width: 160px;
-    height: 229px;
+    width: 16.0rem;
+    height: 22.9rem;
     background-color: #f4f4f4;
     border-radius: 0.9rem;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .team__photo {
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
     border-radius: 0.9rem 0.9rem 0 0;
 }
 
@@ -510,14 +510,14 @@
     color: #037E8C;
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 5px;
-    padding-left: 8px;
+    margin-bottom: .5rem;
+    padding-left: .8rem;
 }
 
 .team__job {
     font-size: 1.4rem;
     font-weight: 400;
-    padding-left: 8px;
+    padding-left: .8rem;
 }
 
 
@@ -533,17 +533,17 @@
 
 .conditions__container {
     max-width: 85rem;
-    margin-top: 35px;
-    margin-bottom: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 3.5rem;
+    margin-bottom: 4.0rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
 }
 
 .conditions__title {
     text-align: center;
     font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 17px;
+    margin-bottom: 1.7rem;
 }
 
 .conditions__list {
@@ -553,23 +553,23 @@
 }
 
 .conditions__item {
-    margin-bottom: 8px;
+    margin-bottom: .8rem;
     background-color: var(--bg-main);
-    padding: 10px 10px 10px 40px;
+    padding: 1.0rem 1.0rem 1.0rem 4.0rem;
     position: relative;
-    border-radius: 10px;
+    border-radius: 1.0rem;
 }
 
 .conditions__item::before {
     content: "";
-    width: 30px;
-    height: 30px;
+    width: 3.0rem;
+    height: 3.0rem;
     background-image: url("../img/conditions_check.svg");
     background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: .5rem;
+    left: .5rem;
 }
 
 .conditions__text {
@@ -589,8 +589,8 @@
 }
 
 .special__container {
-    margin-top: 25px;
-    margin-bottom: 60px;
+    margin-top: 2.5rem;
+    margin-bottom: 6.0rem;
     max-width: 85rem;
 }
 
@@ -599,7 +599,7 @@
     text-align: center;
     font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 22px;
+    margin-bottom: 2.2rem;
 }
 
 .special__list {
@@ -610,11 +610,11 @@
 }
 
 .special__item {
-    width: 335px;
-    height: 344px;
+    width: 33.5rem;
+    height: 34.4rem;
     background-color: #F4F4F4;
-    margin-bottom: 15px;
-    border-radius: 9px;
+    margin-bottom: 1.5rem;
+    border-radius: .9rem;
     background-image: url("../img/special_vector.svg");
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -622,8 +622,8 @@
 
 
 .special__img {
-    margin-bottom: 10px;
-    border-radius: 9px;
+    margin-bottom: 1.0rem;
+    border-radius: .9rem;
 }
 
 .special__img img {
@@ -631,22 +631,22 @@
 }
 
 .special__wrapper-text {
-    padding-left: 20px;
-    padding-right: 90px;
+    padding-left: 2.0rem;
+    padding-right: 9.0rem;
 }
 
 .special__sale {
     color: #037E8C;
     font-size: 2.4rem;
     font-weight: 800;
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
 }
 
 .special__text {
     color: #037E8C;
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 1.0rem;
 }
 
 .special__description {
@@ -660,10 +660,10 @@
     color: #037E8C;
     font-size: 1.4rem;
     font-weight: 600;
-    border-radius: 9px;
+    border-radius: .9rem;
     border: 1.5px solid #037E8C;
-    padding: 8px 30px;
-    margin-top: 10px;
+    padding: .8rem 3.0rem;
+    margin-top: 1.0rem;
 }
 
 
@@ -682,19 +682,19 @@
 
 .certificate__container {
     max-width: 85rem;
-    margin-top: 36px;
-    margin-bottom: 46px;
+    margin-top: 3.6rem;
+    margin-bottom: 4.6rem;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
 }
 
 .certificate__title {
     color: #151515;
     font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 7px;
+    margin-bottom: .7rem;
     text-align: center;
 }
 
@@ -702,16 +702,16 @@
     color: #037E8C;
     font-size: 1.6rem;
     font-weight: 500;
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
     line-height: 2.08rem;
     text-align: center;
 }
 
 
 .card {
-    width: 340px;
-    height: 190px;
-    border-radius: 9px;
+    width: 34.0rem;
+    height: 19.0rem;
+    border-radius: .9rem;
     background: #373737;
     display: flex;
     flex-wrap: wrap;
@@ -719,12 +719,12 @@
     background-image: url("../img/certificate_vector.svg");
     background-position: bottom right;
     background-repeat: no-repeat;
-    margin: 0px auto;
+    margin: .0rem auto;
 }
 
 
 .certificate__card {
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
 }
 
 .card__bow {}
@@ -741,8 +741,8 @@
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.232rem;
-    width: 220px;
-    padding-left: 22px;
+    width: 22.0rem;
+    padding-left: 2.2rem;
 }
 
 .card__logo {}
@@ -752,8 +752,8 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.82rem;
-    padding-left: 22px;
-    padding-bottom: 22px;
+    padding-left: 2.2rem;
+    padding-bottom: 2.2rem;
 }
 
 .certificate__description {
@@ -761,16 +761,16 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2.1rem;
-    margin-bottom: 14px;
+    margin-bottom: 1.4rem;
 }
 
 .certificate__btn {
     color: #037E8C;
     font-size: 1.4rem;
     font-weight: 600;
-    border-radius: 9px;
+    border-radius: .9rem;
     border: 1.5px solid #037E8C;
-    padding: 14px 22px;
+    padding: 1.4rem 2.2rem;
     display: block;
     background-color: transparent;
     max-width: 30rem;
@@ -788,10 +788,10 @@
 
 .questions__container {
     max-width: 85rem;
-    margin: 0px auto;
-    margin-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: .0rem auto;
+    margin-top: 3.0rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
 }
 
 .questions__title {
@@ -799,7 +799,7 @@
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 14px;
+    margin-bottom: 1.4rem;
 }
 
 .questions__list {
@@ -809,7 +809,7 @@
 
 .questions__item {
     border: 0.5px solid #848484;
-    margin-bottom: 10px;
+    margin-bottom: 1.0rem;
 }
 
 .questions__name {
@@ -822,7 +822,7 @@
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2rem;
-    margin-top: 5px;
+    margin-top: .5rem;
 }
 
 
@@ -838,21 +838,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 2.0rem;
+    margin-bottom: 6.0rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
 }
 
 .feedback__img {
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
 }
 
 .feedback__text {
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1.0rem;
 }
 
 .feedback__description {
@@ -860,16 +860,16 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 23px;
+    margin-bottom: 2.3rem;
 }
 
 .feedback__btn {
     color: #FFF;
     font-size: 1.4rem;
     font-weight: 600;
-    border-radius: 9px;
+    border-radius: .9rem;
     background: #037E8C;
-    padding: 13px 33px;
+    padding: 1.3rem 3.3rem;
     text-align: center;
 
 }
@@ -885,7 +885,7 @@ summary::marker {
 }
 
 .accordion__item {
-    padding: 18px 12px;
+    padding: 1.8rem 1.2rem;
 }
 
 
@@ -901,18 +901,18 @@ summary::marker {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-top: 10px;
-    padding-top: 30px;
-    margin: 0px auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 1.0rem;
+    padding-top: 3.0rem;
+    margin: .0rem auto;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
 }
 
 .contacts__container::after {
     content: "";
     background: #037E8C;
     width: 100%;
-    height: 3px;
+    height: .3rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -921,7 +921,7 @@ summary::marker {
 .contacts__title {
     font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 17px;
+    margin-bottom: 1.7rem;
 }
 
 .contacts__map {
@@ -930,7 +930,7 @@ summary::marker {
 }
 
 .contacts__list {
-    margin-top: 17px;
+    margin-top: 1.7rem;
     display: flex;
     flex-direction: column;
 
@@ -938,12 +938,12 @@ summary::marker {
 
 .contacts__item {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     align-items: center;
 }
 
 .contacts__img {
-    margin-right: 11px;
+    margin-right: 1.1rem;
 }
 
 .contacts__text {
@@ -961,12 +961,12 @@ summary::marker {
     color: #121214;
     font-size: 1.8rem;
     font-weight: 600;
-    margin-right: 13px;
+    margin-right: 1.3rem;
 }
 
 .contacts__social {
     text-decoration: none;
-    margin-right: 12px;
+    margin-right: 1.2rem;
 }
 
 
@@ -977,10 +977,10 @@ summary::marker {
     max-width: 85rem;
     display: flex;
     flex-direction: column;
-    margin: 0px auto;
-    margin-top: 35px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: .0rem auto;
+    margin-top: 3.5rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
 }
 
 
@@ -992,7 +992,7 @@ summary::marker {
 }
 
 .footer__item {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 2.24rem;
     text-transform: uppercase;
@@ -1006,8 +1006,8 @@ summary::marker {
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 1.0rem;
+    padding-bottom: 1.5rem;
     position: relative;
     align-items: start;
 }
@@ -1016,7 +1016,7 @@ summary::marker {
     content: "";
     background: #121214;
     width: 100%;
-    height: 0.5px;
+    height: 0..5rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -1026,7 +1026,7 @@ summary::marker {
     content: "";
     background: #121214;
     width: 100%;
-    height: 0.5px;
+    height: 0..5rem;
     position: absolute;
     top: 100%;
     left: 0;
@@ -1037,5 +1037,5 @@ summary::marker {
     color: #787878;
     font-size: 1.2rem;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 1.0rem;
 }
