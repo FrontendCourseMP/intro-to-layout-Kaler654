@@ -1016,7 +1016,7 @@ summary::marker {
     content: "";
     background: #121214;
     width: 100%;
-    height: 0..5rem;
+    height: 0.5px;
     position: absolute;
     top: 0;
     left: 0;
@@ -1026,7 +1026,7 @@ summary::marker {
     content: "";
     background: #121214;
     width: 100%;
-    height: 0..5rem;
+    height: 0.5px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -1038,4 +1038,59 @@ summary::marker {
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 1.0rem;
+}
+
+
+
+@media(min-width: 992px) {
+    .gallery {
+        background: linear-gradient(0deg, rgba(39, 39, 41, 0.60) 0%, rgba(39, 39, 41, 0.60) 100%), url("../img/gallery_background_desktop.jfif"), lightgray 50% / cover no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 92rem;
+        justify-content: start;
+    }
+
+    .gallery__container {
+        max-width: 144rem;
+    }
+
+    .gallery__title {
+        font-size: 70px;
+        font-weight: 800;
+        line-height: 8.785rem;
+        letter-spacing: .315rem;
+    }
+
+    .gallery__text {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 2.6rem;
+    }
+
+    .gallery__btn {
+        font-size: 1.6rem;
+        margin-bottom: 10.0rem;
+        padding: 1.7rem;
+        width: 27.0rem;
+    }
+
+    .gallery__btn img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .gallery__slides {}
+
+    .slides {}
+
+    .gallery__slide {}
+
+    .slide {}
+
+    .line {}
+
+    .scroll {}
 }
