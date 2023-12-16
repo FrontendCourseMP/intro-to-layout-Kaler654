@@ -102,7 +102,6 @@
     max-width: 85rem;
     margin: .0rem auto;
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
 }
 
 .header__logo {}
@@ -119,6 +118,9 @@
 }
 
 
+.header__menu {
+    display: none;
+}
 
 .main {}
 
@@ -194,7 +196,7 @@
 .scroll {
     font-size: 1.4rem;
     font-weight: 300;
-    margin-left: 1.0rem;
+    margin-left: 1.5rem;
 }
 
 .line {
@@ -395,13 +397,16 @@
 
 .rates__image {
     margin-right: 1.0rem;
+
 }
+
 
 .rates__image img {
     border-radius: 0.9rem;
     max-width: 100%;
 
 }
+
 
 
 .routes__slides {}
@@ -1042,9 +1047,88 @@ summary::marker {
 
 
 
-@media(min-width: 992px) {
+@media(min-width: 1280px) {
+
+
+    .header__logo img {
+        width: 110px;
+        height: 140px;
+    }
+
+    .header__container {
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__menu {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .menu {
+        display: flex;
+        column-gap: 50px;
+    }
+
+    .menu__item {
+        margin-top: 5px;
+    }
+
+    .menu__item:last-child {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 0px;
+        margin-left: 80px;
+    }
+
+    .menu__item:last-child::before {
+        content: "";
+        width: 2.0rem;
+        height: 2.0rem;
+        background-image: url("../img/header_phone.svg");
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        top: 2px;
+        left: -30px;
+    }
+
+    .menu__link {
+        color: #FFF;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    .phone-number {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        margin-bottom: 10px;
+    }
+
+    .phone-btn {
+        color: #FFF;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 12px 20px;
+        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.40);
+    }
+
+
+
     .gallery {
-        background: linear-gradient(0deg, rgba(39, 39, 41, 0.60) 0%, rgba(39, 39, 41, 0.60) 100%), url("../img/gallery_background_desktop.jfif"), lightgray 50% / cover no-repeat;
+        background-image: url("../img/gallery_background_desktop.jpg");
         background-size: cover;
         background-position: center;
         background-size: cover;
@@ -1054,26 +1138,37 @@ summary::marker {
     }
 
     .gallery__container {
+        margin: 0px auto;
         max-width: 144rem;
+        margin-top: 25rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
     }
+
 
     .gallery__title {
         font-size: 70px;
         font-weight: 800;
         line-height: 8.785rem;
         letter-spacing: .315rem;
+        width: 60rem;
+        margin-bottom: 3.7rem;
     }
 
     .gallery__text {
         font-size: 24px;
         font-weight: 500;
         line-height: 2.6rem;
+        margin-bottom: 8rem;
     }
 
     .gallery__btn {
         font-size: 1.6rem;
         margin-bottom: 10.0rem;
-        padding: 1.7rem;
+        padding: 1.3rem;
         width: 27.0rem;
     }
 
@@ -1082,15 +1177,186 @@ summary::marker {
         height: 3rem;
     }
 
-    .gallery__slides {}
+    .gallery__slides {
+        transform: rotate(-270deg);
+        height: 300px;
+        align-items: start;
+        padding-top: 5rem;
+    }
+
+
+    .gallery__slide {
+        margin-top: 3px;
+    }
+
+
+    .gallery__line {
+        height: 14px;
+    }
+
+    .scroll {}
+
+
+
+    .advantages {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .advantages__container {
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+    }
+
+    .advantages__list {
+        justify-content: space-between;
+    }
+
+    .advantages__item {
+        width: 30rem;
+    }
+
+    .item__icon {
+        width: 60px;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .item__title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .item__text {
+        font-size: 1.8rem;
+    }
+
+
+    .routes {
+        overflow: hidden;
+    }
+
+    .routes__container {
+        margin-top: 57px;
+        margin-bottom: 120px;
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+    }
+
+    .routes__title {
+        font-size: 3.6rem;
+        margin-bottom: 7rem;
+    }
+
+    .routes__rates {}
+
+    .rates__item {
+        display: flex;
+        column-gap: 4rem;
+    }
+
+    .rates__item:nth-child(even) .rates__content {
+        order: 2;
+    }
+
+    .rates__item:nth-child(even) .rates__images {
+        flex-direction: row-reverse;
+    }
+
+    .rates__slider {
+        flex: 0 1 50%;
+        overflow: hidden;
+    }
+
+    .rates__content {
+        flex: 0 1 50%;
+        padding-left: 10rem;
+    }
+
+    .rates__title {
+        font-size: 3.6rem;
+        margin-bottom: 0.9rem;
+    }
+
+    .rates__title::after {
+        display: none;
+    }
+
+    .rates__content {
+        position: relative;
+    }
+
+    .rates__content::before {
+        content: "";
+        width: 8.0rem;
+        height: .3rem;
+        background: #037E8C;
+        position: absolute;
+        top: 5%;
+        left: 0;
+    }
+
+    .rates__price {
+        font-size: 2.4rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .rates__list {
+        font-size: 1.6rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .rates__list li {
+        margin-bottom: .9rem;
+    }
+
+    .uppercase {}
+
+    .rates__route {
+        font-size: 1.8rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .rates__description {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+    }
+
+    .rates__wrapper {
+        max-width: 36rem;
+    }
+
+    .rates__btn {
+        padding: 1.4rem 4.4rem;
+    }
+
+    .rates__link {
+        padding: 1.4rem 2.9rem;
+    }
+
+    .rates__images {
+        margin-top: 0rem;
+        overflow: hidden;
+    }
+
+    .rates__image {}
+
+    .rates__image img {}
+
+    .routes__slides {}
 
     .slides {}
 
-    .gallery__slide {}
+    .routes__slide {}
 
     .slide {}
 
     .line {}
 
     .scroll {}
+
 }

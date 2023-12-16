@@ -17,6 +17,29 @@
                 <a href="#" class="header__logo">
                     <img src="/img/header_logo.svg" alt="Логотип">
                 </a>
+                <nav class="header__menu menu">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Маршруты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Галерея</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Вопрос-Ответ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Забронировать</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="phone-number" href="tel:+79283332645">+7 928 333 26 45</a>
+                            <a class="phone-btn" href="tel:+79283332645">Перезвоните мне</a>
+                        </li>
+                    </ul>
+                </nav>
                 <button class="header__btn">
                     <img src="/img/header_menu.svg" alt="Бургер">
                 </button>
@@ -26,20 +49,22 @@
         <main class="main">
             <section class="gallery" id="gallery">
                 <div class="gallery__container">
-                    <h1 class="gallery__title">Экскурсии на
-                        квадроциклах
-                        в Геленджике</h1>
-                    <p class="gallery__text">приезжайте за новыми
-                        ощущениями и эмоциями!</p>
-                    <a class="gallery__btn" href="#">
-                        Подобрать маршрут
-                        <img src="img/gallery_arrow.svg" alt="">
-                    </a>
+                    <div class="gallery__content">
+                        <h1 class="gallery__title">Экскурсии на
+                            квадроциклах
+                            в Геленджике</h1>
+                        <p class="gallery__text">приезжайте за новыми
+                            ощущениями и эмоциями!</p>
+                        <a class="gallery__btn" href="#">
+                            Подобрать маршрут
+                            <img src="img/gallery_arrow.svg" alt="">
+                        </a>
+                    </div>
                     <div class="gallery__slides slides">
                         <button class="gallery__slide slide"></button>
                         <button class="gallery__slide slide"></button>
                         <button class="gallery__slide slide"></button>
-                        <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
+                        <svg class="gallery__line line" width="54" height="2" viewBox="0 0 54 1" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <line x1="54" y1="0.5" y2="0.5" stroke="white" />
                         </svg>
@@ -49,34 +74,36 @@
             </section>
 
             <section class="advantages">
-                <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <img class="item__icon" src="img/advantages_icon1.svg" alt="Иконка">
-                        <h3 class="item__title">Увлекательные экскурсии</h3>
-                        <p class="item__text">
-                            Маршруты от лесных дорожек
-                            до полного бездорожья!
-                        </p>
-                    </li>
-                    <li class="advantages__item">
-                        <img class="item__icon" src="img/advantages_icon2.svg" alt="Иконка">
-                        <h3 class="item__title">Надежная техника</h3>
-                        <p class="item__text">18 квадроциклов всех японских брендов</p>
-                    </li>
-                    <li class="advantages__item">
-                        <img class="item__icon" src="img/advantages_icon3.svg" alt="Иконка">
-                        <h3 class="item__title">Экипировка бесплатно</h3>
-                        <p class="item__text">
-                            Необходимая экипировка
-                            выдается бесплатно
-                        </p>
-                    </li>
-                    <li class="advantages__item">
-                        <img class="item__icon" src="img/advantages_icon4.svg" alt="Иконка">
-                        <h3 class="item__title">Опытные инструктора</h3>
-                        <p class="item__text">Обеспечат полную безопасность Вашего отдыха</p>
-                    </li>
-                </ul>
+                <div class="advantages__container">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <img class="item__icon" src="img/advantages_icon1.svg" alt="Иконка">
+                            <h3 class="item__title">Увлекательные экскурсии</h3>
+                            <p class="item__text">
+                                Маршруты от лесных дорожек
+                                до полного бездорожья!
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <img class="item__icon" src="img/advantages_icon2.svg" alt="Иконка">
+                            <h3 class="item__title">Надежная техника</h3>
+                            <p class="item__text">18 квадроциклов всех японских брендов</p>
+                        </li>
+                        <li class="advantages__item">
+                            <img class="item__icon" src="img/advantages_icon3.svg" alt="Иконка">
+                            <h3 class="item__title">Экипировка бесплатно</h3>
+                            <p class="item__text">
+                                Необходимая экипировка
+                                выдается бесплатно
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <img class="item__icon" src="img/advantages_icon4.svg" alt="Иконка">
+                            <h3 class="item__title">Опытные инструктора</h3>
+                            <p class="item__text">Обеспечат полную безопасность Вашего отдыха</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section class="routes" id="routes">
@@ -84,144 +111,186 @@
                     <h2 class="routes__title">Наши маршруты</h2>
                     <ul class="routes__rates">
                         <li class="rates__item">
-                            <h3 class="rates__title">БАЗОВЫЙ</h3>
-                            <p class="rates__price">от 4000</p>
-                            <ul class="rates__list">
-                                <li>
-                                    <img src="img/routes_time.svg" alt="время">
-                                    <p><span class="uppercase">Время в пути:</span> 1,5 - 2 часа</p>
-                                </li>
-                                <li>
-                                    <img src="img/routes_point.svg" alt="точка">
-                                    <p><span class="uppercase">Расстояние:</span> 20 - 25 км</p>
-                                </li>
-                                <li>
-                                    <img src="img/routes_star.svg" alt="звезда">
-                                    <p><span class="uppercase">Сложность:</span> 5***</p>
-                                </li>
-                            </ul>
-                            <p class="rates__route">Маршрут</p>
-                            <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                                --Грозовые Ворота - Шашлыки -
-                                Цыгельский водопад (чаша любви) - Форсаж</p>
-                            <div class="rates__wrapper">
-                                <button class="rates__btn">Подробнее</button>
-                                <a class="rates__link" href="#">Забронировать</a>
+                            <div class="rates__content">
+                                <h3 class="rates__title">БАЗОВЫЙ</h3>
+                                <p class="rates__price">от 4000 ₽</p>
+                                <ul class="rates__list">
+                                    <li>
+                                        <img src="img/routes_time.svg" alt="время">
+                                        <p><span class="uppercase">Время в пути:</span> 1,5 - 2 часа</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/routes_point.svg" alt="точка">
+                                        <p><span class="uppercase">Расстояние:</span> 20 - 25 км</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/routes_star.svg" alt="звезда">
+                                        <p><span class="uppercase">Сложность:</span> 5***</p>
+                                    </li>
+                                </ul>
+                                <p class="rates__route">Маршрут</p>
+                                <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора
+                                    Нексис
+                                    --Грозовые Ворота - Шашлыки -
+                                    Цыгельский водопад (чаша любви) - Форсаж</p>
+                                <div class="rates__wrapper">
+                                    <button class="rates__btn">Подробнее</button>
+                                    <a class="rates__link" href="#">Забронировать</a>
+                                </div>
                             </div>
-                            <ul class="rates__images">
-                                <li class="rates__image">
-                                    <img src="img/routes_car1.jpg" alt="Картинка">
-                                </li>
-                                <li class="rates__image">
-                                    <img src="img/routes_car2.jpg" alt="Картинка">
-                                </li>
-                                <li class="rates__image">
-                                    <img src="img/routes_car3.jpg" alt="Картинка">
-                                </li>
-                            </ul>
-                            <div class="routes__slides slides">
-                                <button class="routes__slide slide"></button>
-                                <button class="routes__slide slide"></button>
-                                <button class="routes__slide slide"></button>
-                                <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
-                                </svg>
-                                <p class="scroll">scroll</p>
-                            </div>
-                        </li>
-                        <li class="rates__item">
-                            <h3 class="rates__title">РАСШИРЕННЫЙ</h3>
-                            <p class="rates__price">от 16000</p>
-                            <ul class="rates__list">
-                                <li>
-                                    <img src="img/routes_time.svg" alt="время">
-                                    <p><span class="uppercase">Время в пути:</span> 6 - 8 часов</p>
-                                </li>
-                                <li>
-                                    <img src="img/routes_point.svg" alt="точка">
-                                    <p><span class="uppercase">Расстояние:</span> 60 - 70 км</p>
-                                </li>
-                                <li>
-                                    <img src="img/routes_star.svg" alt="звезда">
-                                    <p><span class="uppercase">Сложность:</span> 5***</p>
-                                </li>
-                            </ul>
-                            <p class="rates__route">Маршрут</p>
-                            <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                                --Грозовые Ворота - Шашлыки -
-                                Цыгельский водопад (чаша любви) - Форсаж</p>
-                            <div class="rates__wrapper">
-                                <button class="rates__btn">Подробнее</button>
-                                <a class="rates__link" href="#">Забронировать</a>
-                            </div>
-                            <ul class="rates__images">
-                                <li class="rates__image">
-                                    <img src="img/routes_car4.jpg" alt="Картинка">
-                                </li>
-                                <li class="rates__image">
-                                    <img src="img/routes_car5.jpg" alt="Картинка">
-                                </li>
-                                <li class="rates__image">
-                                    <img src="img/routes_car6.jpg" alt="Картинка">
-                                </li>
-                            </ul>
-                            <div class="routes__slides slides">
-                                <button class="routes__slide slide"></button>
-                                <button class="routes__slide slide"></button>
-                                <button class="routes__slide slide"></button>
-                                <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
-                                </svg>
-                                <p class="scroll">scroll</p>
+                            <div class="rates__slider">
+                                <ul class="rates__images">
+                                    <li class="rates__image">
+                                        <picture>
+                                            <source srcset="img/routes_car1_desktop.jpg" media="(min-width: 1280px)">
+                                            <img src="img/routes_car1.jpg" alt="Картинка">
+                                        </picture>
+                                    </li>
+                                    <li class="rates__image">
+                                        <picture>
+                                            <source srcset="img/routes_car2_desktop.jpg" media="(min-width: 1280px)">
+                                            <img src="img/routes_car2.jpg" alt="Картинка">
+                                        </picture>
+                                    </li>
+                                    <li class="rates__image">
+                                        <picture>
+                                            <source srcset="img/routes_car3_desktop.jpg" media="(min-width: 1280px)">
+                                            <img src="img/routes_car3.jpg" alt="Картинка">
+                                        </picture>
+                                    </li>
+                                </ul>
+                                <div class="routes__slides slides">
+                                    <button class="routes__slide slide"></button>
+                                    <button class="routes__slide slide"></button>
+                                    <button class="routes__slide slide"></button>
+                                    <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
+                                    </svg>
+                                    <p class="scroll">scroll</p>
+                                </div>
                             </div>
                         </li>
                         <li class="rates__item">
-                            <h3 class="rates__title">EXPERIENCE</h3>
-                            <p class="rates__price">от 7000</p>
-                            <ul class="rates__list">
-                                <li>
-                                    <img src="img/routes_time.svg" alt="звезда">
-                                    <p><span class="uppercase">Время в пути:</span> 4 часа</p>
-                                </li>
-                                <li>
-                                    <img src="img/routes_point.svg" alt="звезда">
-                                    <p<span class="uppercase">Расстояние:</span> 40 - 50 км</p>
-                                </li>
-                                <li>
-                                    <img src="img/routes_star.svg" alt="звезда">
-                                    <p><span class="uppercase">Сложность:</span> 5***</p>
-                                </li>
-                            </ul>
-                            <p class="rates__route">Маршрут</p>
-                            <p class="rates__description">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио
-                                –Форсаж
-                            </p>
-                            <div class="rates__wrapper">
-                                <button class="rates__btn">Подробнее</button>
-                                <a class="rates__link" href="#">Забронировать</a>
+                            <div class="rates__content">
+                                <h3 class="rates__title">РАСШИРЕННЫЙ</h3>
+                                <p class="rates__price">от 16000 ₽</p>
+                                <ul class="rates__list">
+                                    <li>
+                                        <img src="img/routes_time.svg" alt="время">
+                                        <p><span class="uppercase">Время в пути:</span> 6 - 8 часов</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/routes_point.svg" alt="точка">
+                                        <p><span class="uppercase">Расстояние:</span> 60 - 70 км</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/routes_star.svg" alt="звезда">
+                                        <p><span class="uppercase">Сложность:</span> 5***</p>
+                                    </li>
+                                </ul>
+                                <p class="rates__route">Маршрут</p>
+                                <p class="rates__description">Смотровая - Родник - Камень Джигита - Адербиевка - Гора
+                                    Нексис
+                                    --Грозовые Ворота - Шашлыки -
+                                    Цыгельский водопад (чаша любви) - Форсаж</p>
+                                <div class="rates__wrapper">
+                                    <button class="rates__btn">Подробнее</button>
+                                    <a class="rates__link" href="#">Забронировать</a>
+                                </div>
                             </div>
-                            <ul class="rates__images">
-                                <li class="rates__image">
-                                    <img src="img/routes_car7.jpg" alt="Картинка">
-                                </li>
-                                <li class="rates__image">
-                                    <img src="img/routes_car8.jpg" alt="Картинка">
-                                </li>
-                                <li class="rates__image">
-                                    <img src="img/routes_car9.jpg" alt="Картинка">
-                                </li>
-                            </ul>
-                            <div class="routes__slides slides">
-                                <button class="routes__slide slide"></button>
-                                <button class="routes__slide slide"></button>
-                                <button class="routes__slide slide"></button>
-                                <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
-                                </svg>
-                                <p class="scroll">scroll</p>
+                            <div class="rates__slider">
+                                <ul class="rates__images">
+                                    <li class="rates__image">
+                                        <picture>
+                                            <source srcset="img/routes_car4_desktop.jpg" media="(min-width: 1280px)">
+                                            <img src="img/routes_car4.jpg" alt="Картинка">
+                                        </picture>
+                                    </li>
+                                    <li class="rates__image">
+                                        <picture>
+                                            <source srcset="img/routes_car5_desktop.jpg" media="(min-width: 1280px)">
+                                            <img src="img/routes_car5.jpg" alt="Картинка">
+                                        </picture>
+                                    </li>
+                                    <li class="rates__image">
+                                        <picture>
+                                            <source srcset="img/routes_car6_desktop.jpg" media="(min-width: 1280px)">
+                                            <img src="img/routes_car6.jpg" alt="Картинка">
+                                        </picture>
+                                    </li>
+                                </ul>
+                                <div class="routes__slides slides">
+                                    <button class="routes__slide slide"></button>
+                                    <button class="routes__slide slide"></button>
+                                    <button class="routes__slide slide"></button>
+                                    <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
+                                    </svg>
+                                    <p class="scroll">scroll</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rates__item">
+                            <div class="rates__content">
+                                <h3 class="rates__title">EXPERIENCE</h3>
+                                <p class="rates__price">от 7000 ₽</p>
+                                <ul class="rates__list">
+                                    <li>
+                                        <img src="img/routes_time.svg" alt="звезда">
+                                        <p><span class="uppercase">Время в пути:</span> 4 часа</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/routes_point.svg" alt="звезда">
+                                        <p<span class="uppercase">Расстояние:</span> 40 - 50 км</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/routes_star.svg" alt="звезда">
+                                        <p><span class="uppercase">Сложность:</span> 5***</p>
+                                    </li>
+                                </ul>
+                                <p class="rates__route">Маршрут</p>
+                                <p class="rates__description">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз
+                                    Рио
+                                    –Форсаж
+                                </p>
+                                <div class="rates__wrapper">
+                                    <button class="rates__btn">Подробнее</button>
+                                    <a class="rates__link" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                            <div class="rates__slider">
+                                <ul class="rates__images">
+                                    <li class="rates__image">
+                                        <picture>
+                                            <source srcset="img/routes_car7_desktop.jpg" media="(min-width: 1280px)">
+                                            <img src="img/routes_car7.jpg" alt="Картинка">
+                                        </picture>
+                                    </li>
+                                    <li class="rates__image">
+                                        <picture>
+                                            <source srcset="img/routes_car8_desktop.jpg" media="(min-width: 1280px)">
+                                            <img src="img/routes_car8.jpg" alt="Картинка">
+                                        </picture>
+                                    </li>
+                                    <li class="rates__image">
+                                        <picture>
+                                            <source srcset="img/routes_car9_desktop.jpg" media="(min-width: 1280px)">
+                                            <img src="img/routes_car9.jpg" alt="Картинка">
+                                        </picture>
+                                    </li>
+                                </ul>
+                                <div class="routes__slides slides">
+                                    <button class="routes__slide slide"></button>
+                                    <button class="routes__slide slide"></button>
+                                    <button class="routes__slide slide"></button>
+                                    <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
+                                    </svg>
+                                    <p class="scroll">scroll</p>
+                                </div>
                             </div>
                         </li>
                     </ul>
