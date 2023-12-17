@@ -256,6 +256,9 @@
 .routes {
     color: var(--text-main);
     background-color: var(--bg-secondary);
+    background-image: url("../img/routes_background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
@@ -435,6 +438,8 @@
     max-width: 85rem;
     margin-top: 4.5rem;
     margin-bottom: 5.0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .testing__title {
@@ -531,6 +536,8 @@
     color: var(--text-main);
     background-color: var(--bg-secondary);
     background-image: url("../img/conditions_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
@@ -734,6 +741,10 @@
 
 .card__bow {}
 
+.card__content {
+    display: flex;
+}
+
 .card__title {
     color: #121214;
     font-size: 3rem;
@@ -748,9 +759,13 @@
     line-height: 2.232rem;
     width: 22.0rem;
     padding-left: 2.2rem;
+    margin-bottom: 1rem;
 }
 
-.card__logo {}
+.card__logo {
+    position: relative;
+    top: -3rem;
+}
 
 .card__description {
     color: #FFF;
@@ -789,6 +804,7 @@
     color: var(--text-main);
     background-color: var(--bg-main);
     font-family: 'Montserrat', sans-serif;
+    display: flex;
 }
 
 .questions__container {
@@ -797,6 +813,7 @@
     margin-top: 3.0rem;
     padding-left: 1.0rem;
     padding-right: 1.0rem;
+    margin-bottom: 6.0rem;
 }
 
 .questions__title {
@@ -810,6 +827,7 @@
 .questions__list {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .questions__item {
@@ -844,7 +862,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2.0rem;
-    margin-bottom: 6.0rem;
     padding-left: 1.0rem;
     padding-right: 1.0rem;
 }
@@ -932,6 +949,11 @@ summary::marker {
 .contacts__map {
     width: 36rem;
     height: 21.5rem;
+    max-width: 100%;
+}
+
+.contacts__image-desktop {
+    display: none;
 }
 
 .contacts__list {
@@ -1043,6 +1065,421 @@ summary::marker {
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 1.0rem;
+}
+
+
+@media(min-width: 768px) {
+    .header__logo img {
+        width: 7rem;
+    }
+
+    .header__btn img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .header__btn {
+        height: 6.5rem;
+    }
+
+    .gallery__container {
+        margin-top: 17rem;
+        max-width: 90rem;
+        width: 100%;
+        padding-right: 3rem;
+        padding-left: 3rem;
+
+    }
+
+    .gallery__title {
+        font-size: 3.8rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .gallery__text {
+        font-size: 1.8rem;
+    }
+
+    .advantages__container {
+        max-width: 90rem;
+        width: 100%;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .advantages__list {
+        width: 100%;
+        column-gap: 1.6rem;
+    }
+
+    .item__title {
+        font-size: 1.8rem;
+    }
+
+    .item__text {
+        font-size: 1.6rem;
+    }
+
+
+
+    .routes__container {
+        max-width: 90rem;
+        width: 100%;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        margin-top: 5.5rem;
+        margin-bottom: 10rem;
+    }
+
+    .routes__title {
+        font-size: 3.0rem;
+        margin-bottom: 4rem;
+    }
+
+    .rates__title {
+        font-size: 2.6rem;
+    }
+
+    .rates__price {
+        font-size: 2.0rem;
+    }
+
+    .rates__list {
+        font-size: 1.6rem;
+    }
+
+    .rates__route {
+        font-size: 1.8rem;
+    }
+
+    .rates__description {
+        font-size: 1.5rem;
+    }
+
+    .rates__image {
+        max-width: 100%;
+    }
+
+    .testing__title {
+        font-size: 2.6rem;
+    }
+
+    .testing__text {
+        font-size: 1.8rem;
+    }
+
+    .testing__container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+        margin-top: 6.5rem;
+        margin-bottom: 7rem;
+    }
+
+    .testing__btn {
+        font-size: 1.6rem;
+    }
+
+
+
+
+    .team__container {
+        max-width: 90rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        width: 100%;
+        margin-top: 9rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .team__title {
+        font-size: 3rem;
+        margin-bottom: 3.3rem;
+    }
+
+    .team__list {
+        width: 100%;
+        column-gap: 2rem;
+        flex-wrap: nowrap;
+
+    }
+
+    .team__item {
+        width: 40rem;
+        height: 30rem;
+    }
+
+    .team__photo {
+        max-width: 100%;
+    }
+
+    .team__name {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+        padding-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .team__job {
+        font-size: 1.6rem;
+        padding-left: 1.5rem;
+    }
+
+    .conditions__container {
+        max-width: 90rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        width: 100%;
+    }
+
+    .conditions__text {
+        font-size: 1.8rem;
+    }
+
+    .conditions__item {
+        padding: 2rem 2rem 2rem 4rem;
+    }
+
+    .conditions__item::before {
+        top: 1.5rem;
+    }
+
+    .conditions__title {
+        margin-bottom: 3rem;
+        font-size: 3rem;
+    }
+
+    .conditions__list {
+        width: 100%;
+    }
+
+    .special__title {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .special__container {
+        max-width: 90rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        width: 100%;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .special__list {
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 3rem;
+    }
+
+    .special__sale {
+        font-size: 2.6rem;
+    }
+
+    .special__text {
+        font-size: 2rem;
+    }
+
+    .certificate__container {
+        max-width: 90rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        width: 100%;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+    }
+
+    .certificate__title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .certificate__text {
+        font-size: 1.8rem;
+    }
+
+    .card__bow {
+        position: relative;
+        top: -1.3rem;
+    }
+
+    .card {
+        width: 40rem;
+        height: 22rem;
+        margin-bottom: 3rem;
+    }
+
+    .card__wrapper {
+        margin-right: 2rem;
+    }
+
+    .certificate__description {
+        font-size: 1.6rem;
+        width: 50rem;
+        line-height: 2.5rem;
+    }
+
+    .certificate__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .questions__container {
+        max-width: 90rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        width: 100%;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .questions__title {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .questions__name {
+        font-size: 1.8rem;
+    }
+
+    .questions__answer {
+        font-size: 1.4rem;
+    }
+
+    .feedback__text {
+        font-size: 2.2rem;
+    }
+
+    .feedback__description {
+        font-size: 1.6rem;
+    }
+
+    .feedback__btn {
+        font-size: 1.6rem;
+    }
+
+
+
+
+
+
+    .contacts {}
+
+    .contacts__container {
+        max-width: 90rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .contacts__content {
+        flex: 0 1 50%;
+        position: relative;
+        padding-top: 1.5rem;
+    }
+
+    .contacts__content::after {
+        content: "";
+        background: #037E8C;
+        width: 100%;
+        height: .3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .contacts__container::after {
+        display: none;
+    }
+
+    .contacts__image-desktop {
+        display: block;
+        flex: 0 1 50%;
+    }
+
+    .contacts__map-desktop {
+        max-width: 100%;
+    }
+
+
+    .contacts__title {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .contacts__map {
+        display: none;
+    }
+
+    .contacts__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+
+    .contacts__item {
+        width: 28rem;
+    }
+
+    .contacts__img {}
+
+    .contacts__text {
+        font-size: 1.8rem;
+    }
+
+    .socials__wrapper {
+        flex-wrap: wrap;
+        width: 20rem;
+        row-gap: 1.5rem;
+    }
+
+    .contacts__socials {
+        font-size: 2.2rem;
+    }
+
+    .contacts__social {}
+
+
+
+
+
+    .footer__container {
+        max-width: 90rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        width: 100%;
+    }
+
+    .footer__wrapper {
+        align-items: start;
+    }
+
+    .footer__logo {
+        width: 7rem;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .footer__item {
+        font-size: 1.6rem;
+    }
+
+    .footer__text {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
 }
 
 
@@ -1212,6 +1649,7 @@ summary::marker {
 
     .advantages__list {
         justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
     .advantages__item {
@@ -1257,6 +1695,8 @@ summary::marker {
     .rates__item {
         display: flex;
         column-gap: 4rem;
+        max-height: 40rem;
+        margin-bottom: 15rem;
     }
 
     .rates__item:nth-child(even) .rates__content {
@@ -1267,6 +1707,14 @@ summary::marker {
         flex-direction: row-reverse;
     }
 
+    .rates__item:nth-child(even) .routes__slides {
+        justify-content: end;
+    }
+
+    .rates__item:last-child {
+        margin-bottom: 0rem;
+    }
+
     .rates__slider {
         flex: 0 1 50%;
         overflow: hidden;
@@ -1275,6 +1723,9 @@ summary::marker {
     .rates__content {
         flex: 0 1 50%;
         padding-left: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .rates__title {
@@ -1345,6 +1796,10 @@ summary::marker {
 
     .rates__image {}
 
+    .rates__image:last-child {
+        display: none;
+    }
+
     .rates__image img {}
 
     .routes__slides {}
@@ -1358,5 +1813,469 @@ summary::marker {
     .line {}
 
     .scroll {}
+
+
+    .testing {
+        background-image: url("../img/testing_background_dekstop.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .testing__container {
+        margin-top: 8rem;
+        margin-bottom: 9rem;
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+    }
+
+    .testing__title {
+        font-size: 3.6rem;
+        font-weight: 700;
+    }
+
+    .testing__text {
+        font-size: 1.8rem;
+    }
+
+    .testing__btn {}
+
+
+
+    .team {
+        background-image: url("../img/team_background_desktop.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .team__container {
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+        margin-top: 9rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .team__title {
+        font-size: 3.6rem;
+        margin-bottom: 3.3rem;
+    }
+
+    .team__list {
+        width: 100%;
+        column-gap: 3rem;
+        flex-wrap: nowrap;
+
+    }
+
+    .team__item {
+        width: 30rem;
+        height: 40rem;
+    }
+
+    .team__photo {
+        max-width: 100%;
+    }
+
+    .team__name {
+        font-size: 2.4rem;
+        margin-bottom: .5rem;
+        padding-left: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .team__job {
+        font-size: 1.8rem;
+        padding-left: 2.5rem;
+    }
+
+
+
+    .conditions {
+        background-image: url("../img/conditions_background_desktop.svg");
+    }
+
+    .conditions__container {
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conditions__title {
+        font-size: 3.6rem;
+        margin-bottom: 4rem;
+        width: 50rem;
+    }
+
+    .conditions__list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 3rem;
+        row-gap: 3rem;
+        width: 100%;
+    }
+
+    .conditions__item {
+        width: 37rem;
+        height: 10rem;
+        margin-bottom: 0rem;
+    }
+
+    .conditions__item::before {
+        top: 1rem;
+    }
+
+    .conditions__text {
+        line-height: 1.9rem;
+
+    }
+
+
+
+    .special {
+        background-image: url("../img/special_background_desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .special__container {
+        margin-top: 6.5rem;
+        margin-bottom: 7.5rem;
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+    }
+
+    .special__title {
+        font-size: 3.6rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .special__list {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        column-gap: 3rem;
+    }
+
+    .special__item {
+        display: flex;
+        flex-direction: row;
+        width: 63.6rem;
+        height: 31.1rem;
+        background-image: url("../img/special_vector_desktop.svg");
+    }
+
+    .special__img {}
+
+    .special__wrapper-text {
+        margin: 2.5rem 1rem 0rem 2rem;
+        padding: 0;
+    }
+
+    .special__sale {
+        font-size: 3.6rem;
+    }
+
+    .special__text {
+        font-size: 2.4rem;
+    }
+
+    .special__description {
+        font-size: 1.8rem;
+    }
+
+    .special__btn {
+        padding: 1.4rem 4.4rem;
+        font-size: 1.4rem;
+    }
+
+
+
+    .certificate {
+        background-image: url("../img/certificate_background_desktop.svg");
+    }
+
+    .certificate__container {
+        margin-top: 5rem;
+        margin-bottom: 9rem;
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificate__title {
+        font-size: 3.6rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .certificate__text {
+        font-size: 2rem;
+        margin-bottom: 4.5rem;
+        line-height: 2.8rem;
+    }
+
+    .certificate__wrapper {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .certificate__card {
+        order: 2;
+        flex: 0 1 50%;
+    }
+
+    .certificate__content {
+        flex: 0 1 50%;
+    }
+
+    .card {
+        width: 63.6rem;
+        height: 31.1rem;
+        background-image: url("../img/certificate_vector_desktop.svg");
+    }
+
+    .card__bow {
+        width: 16rem;
+        position: relative;
+
+    }
+
+    .card__wrapper {
+        margin-right: 6rem;
+        position: relative;
+        top: -2rem;
+    }
+
+    .card__content {
+        justify-content: space-between;
+        margin-bottom: 6rem;
+        margin-left: 8rem;
+    }
+
+    .card__title {
+        font-size: 4.8rem;
+        position: relative;
+        top: -3rem;
+        left: 2rem;
+    }
+
+    .card__text {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        line-height: 3rem;
+    }
+
+    .card__logo {
+        width: 10rem;
+        order: 3;
+        position: relative;
+        top: -5rem;
+    }
+
+    .card__description {
+        font-size: 1.6rem;
+    }
+
+    .certificate__description {
+        margin-bottom: 3rem;
+        width: 52.4rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .certificate__btn {}
+
+
+
+
+    .questions {
+        background-image: url("../img/questions_background_desktop.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .questions__container {
+        margin-top: 7rem;
+        margin-bottom: 30rem;
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    .questions__title {
+        font-size: 3.6rem;
+        margin-bottom: 5rem;
+    }
+
+    .questions__wrapper {
+        display: flex;
+        justify-content: center;
+        column-gap: 15rem;
+    }
+
+    .questions__list {}
+
+    .accordion {}
+
+    .questions__item {
+        width: 54rem;
+    }
+
+    .accordion__item {}
+
+    .accordion__title {}
+
+    .questions__name {}
+
+    .questions__answer {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+
+    .feedback {
+        width: 37rem;
+        margin-bottom: 0rem;
+    }
+
+    .feedback__img {}
+
+    .feedback__text {
+        font-size: 2.4rem;
+    }
+
+    .feedback__description {
+        font-size: 1.4rem;
+    }
+
+    .feedback__btn {}
+
+
+    .contacts {}
+
+    .contacts__container {
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .contacts__content {
+        flex: 0 1 50%;
+        position: relative;
+        padding-top: 1.5rem;
+    }
+
+    .contacts__content::after {
+        content: "";
+        background: #037E8C;
+        width: 100%;
+        height: .3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .contacts__container::after {
+        display: none;
+    }
+
+    .contacts__image-desktop {
+        display: block;
+        flex: 0 1 50%;
+    }
+
+    .contacts__map-desktop {
+        max-width: 100%;
+    }
+
+
+    .contacts__title {
+        font-size: 3.6rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .contacts__map {
+        display: none;
+    }
+
+    .contacts__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 6rem;
+    }
+
+    .contacts__item {
+        width: 28rem;
+    }
+
+    .contacts__img {}
+
+    .contacts__text {
+        font-size: 1.8rem;
+    }
+
+    .socials__wrapper {
+        flex-wrap: wrap;
+        width: 20rem;
+        row-gap: 2rem;
+    }
+
+    .contacts__socials {
+        font-size: 2.4rem;
+    }
+
+    .contacts__social {}
+
+
+
+
+    .footer {}
+
+    .footer__container {
+        max-width: 144rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+    }
+
+    .footer__wrapper {
+        align-items: center;
+    }
+
+    .footer__logo {}
+
+    .footer__list {
+        display: flex;
+        flex-direction: row;
+        column-gap: 6rem;
+    }
+
+    .footer__item {}
+
+    .footer__text {
+        text-align: center;
+        font-size: 1.6rem;
+    }
 
 }
