@@ -1068,6 +1068,20 @@ summary::marker {
 }
 
 
+@media(min-width: 476px) {
+    .advantages__item {
+        width: 40%
+    }
+
+    .team__list {
+        /* column-gap: calc(100% - 80%); */
+        width: 50rem;
+    }
+
+    .team__item {}
+}
+
+
 @media(min-width: 768px) {
     .header__logo img {
         width: 7rem;
@@ -1928,6 +1942,7 @@ summary::marker {
         width: 37rem;
         height: 10rem;
         margin-bottom: 0rem;
+        padding-top: 1rem;
     }
 
     .conditions__item::before {
@@ -1936,6 +1951,7 @@ summary::marker {
 
     .conditions__text {
         line-height: 1.9rem;
+        font-size: 1.6rem;
 
     }
 
@@ -2054,6 +2070,7 @@ summary::marker {
     .card__bow {
         width: 16rem;
         position: relative;
+        top: 0.1rem;
 
     }
 
