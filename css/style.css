@@ -1805,14 +1805,13 @@ summary::marker {
 
     .rates__images {
         margin-top: 0rem;
-        overflow: hidden;
     }
 
-    .rates__image {}
-
-    .rates__image:last-child {
-        display: none;
+    .rates__image img {
+        max-width: none;
     }
+
+    .rates__image:last-child {}
 
     .rates__image img {}
 
