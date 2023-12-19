@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reseter.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <title>FORM</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header__container">
+                <a href="#" class="header__logo">
+                    <img src="/img/header_logo.svg" alt="Логотип">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Маршруты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Галерея</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Вопрос-Ответ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Забронировать</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="phone-number" href="tel:+79283332645">+7 928 333 26 45</a>
+                            <a class="phone-btn" href="tel:+79283332645">Перезвоните мне</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__btn">
+                    <img src="/img/header_menu.svg" alt="Бургер">
+                </button>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="registration">
+                <div class="registration__container">
+                    <form action="//httpbin.org/post" method="post" class="registration__form form">
+                        <h1 class="form__title">Форма регистрации</h1>
+                        <p class="form__notification">
+                            Помеченные поля обязательны для заполнения
+                            <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                        </p>
+
+                        <fieldset class="form__section">
+                            <legend class="form__subtitle">Личная информация</legend>
+                            <p class="form__input">
+                                <label for="name">
+                                    <span>Имя: </span>
+                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                </label>
+                                <input type="text" id="name" name="user_name" tabindex="1" required />
+                            </p>
+
+                            <p class="form__input">
+                                <label for="birthday">
+                                    <span>Дата рождения: </span>
+                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                </label>
+                                <input placeholder="123" type="date" id="birthday" name="user_birthday" tabindex="2"
+                                    required />
+                            </p>
+
+                            <div class="radio__wrapper">
+                                <span>Ваш пол:</span>
+                                <ul class="form__radio radio">
+                                    <li class="radio__item">
+                                        <label for="male">
+                                            <input type="radio" id="male" name="gender" value="Мужской" tabindex="3" />
+                                            Мужской
+                                        </label>
+                                    </li>
+                                    <li class="radio__item">
+                                        <label for="female">
+                                            <input type="radio" id="female" name="gender" value="Женский"
+                                                tabindex="3" />
+                                            Женский
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <p class="form__input">
+                                <label for="password">
+                                    <span>Пароль: </span>
+                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                </label>
+                                <input type="password" id="password" name="user_password" tabindex="4" required />
+                            </p>
+                        </fieldset>
+
+                        <fieldset class="form__section">
+                            <legend class="form__subtitle">Контактная данные</legend>
+                            <p class="form__input">
+                                <label for="email">
+                                    <span>Почта: </span>
+                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                </label>
+                                <input type="email" id="email" name="user_email" placeholder="email@example.ru"
+                                    tabindex="5" required />
+                            </p>
+                            <p class="form__input">
+                                <label for="phone">
+                                    <span>Телефон: </span>
+                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                </label>
+                                <input type="tel" id="phone" name="user_phone" placeholder="+7 (000) 000 00 00"
+                                    tabindex="6" required />
+                            </p>
+
+                            <p class="form__select select">
+                                <label for="interval">
+                                    <span>Удобный интервал для связи:</span>
+                                </label>
+                                <select class="select__list" id="interval" name="user_interval" tabindex="7">
+                                    <option value="morning">Утро</option>
+                                    <option value="afternoon">День</option>
+                                    <option value="evening">Вечер</option>
+                                    <option value="night">Ночь</option>
+                                </select>
+                            </p>
+                        </fieldset>
+
+                        <div class="buttons">
+                            <button class="submit" type="submit" tabindex="8">Отправить</button>
+                            <button class="reset" type="reset" tabindex="9">Сбросить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <img class="footer__logo" src="img/header_logo.svg" alt="Логотип">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#routes">Маршруты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#gallery">Галерея</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#qa">Вопрос-Ответ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#conditions">Условия</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#special">Спецпредложения</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./index.html">CFMOTO</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__text">© CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в
+                    Геленджике
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

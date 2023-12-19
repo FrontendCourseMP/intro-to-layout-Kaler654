@@ -1,0 +1,194 @@
+.header {
+    position: static;
+    background-color: #3b3b3b;
+    padding-bottom: 10px;
+}
+
+
+.main {
+    flex: 1 1 auto;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.registration {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.registration__container {
+    margin: 0px auto;
+    max-width: 85rem;
+}
+
+.registration__form {
+    border: 1px solid #000;
+    padding: 1rem 2rem;
+}
+
+.form {}
+
+.form__title {
+    font-size: 3.6rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.form__notification {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.required {
+    color: red;
+    font-size: 2.4rem;
+}
+
+.form__section {
+    border: 1px solid #000;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.form__subtitle {
+    font-size: 2.4rem;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form__input span {
+    font-size: 2rem;
+}
+
+.form__input input {
+    border: 1px solid #000;
+    width: 20rem;
+    height: 3rem;
+
+}
+
+.form__input label {
+    margin-bottom: 0.5rem;
+}
+
+.radio__wrapper {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio__wrapper span {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form__radio {}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.radio__item {
+    font-size: 1.8rem;
+}
+
+
+.form__select label {
+    font-size: 2rem;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.select select {
+    border: 1px solid #000;
+    width: 10rem;
+    font-size: 2rem;
+}
+
+.select__list {}
+
+
+button {
+    background-color: transparent;
+}
+
+
+.buttons {
+    display: flex;
+    column-gap: 2rem;
+}
+
+button {
+    border: 1px solid #999999;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.submit {
+    padding-left: 4rem;
+    position: relative;
+}
+
+.submit::before {
+    content: "";
+    width: 3.0rem;
+    height: 3.0rem;
+    background-image: url("../img/form_send.svg");
+    fill: #000;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+}
+
+.reset {
+    padding-left: 4rem;
+    position: relative;
+}
+
+.reset::before {
+    content: "";
+    width: 3.0rem;
+    height: 3.0rem;
+    background-image: url("../img/form_reset.svg");
+    fill: #000;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+}
+
+
+
+input {
+    padding-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+input::placeholder {
+    font-size: 1.6rem;
+}
+
+:focus {
+    outline: auto;
+}
+
+input[type="password"] {
+    font-size: 5rem;
+    padding-bottom: 0.5rem;
+}
