@@ -1725,12 +1725,25 @@ summary::marker {
         justify-content: end;
     }
 
+    .rates__item:nth-child(even) .rates__slider-wrapper {
+        top: 0px;
+        right: 0px;
+    }
+
     .rates__item:last-child {
         margin-bottom: 0rem;
     }
 
     .rates__slider {
         flex: 0 1 50%;
+        position: relative;
+    }
+
+    .rates__slider-wrapper {
+        position: absolute;
+    }
+
+    .rates__images {
         overflow: hidden;
     }
 
