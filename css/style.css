@@ -911,6 +911,7 @@ summary:focus {
     background-color: transparent;
     max-width: 30rem;
     transition: 0.5s all;
+    background-color: #fff;
 }
 
 .certificate__btn:hover {
