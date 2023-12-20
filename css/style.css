@@ -80,6 +80,47 @@
     color: #ffffff;
 }
 
+a:focus {
+    outline: 3px solid #41c0ce;
+}
+
+
+button:focus {
+    outline: 3px solid #41c0ce;
+}
+
+summary:focus {
+    outline: 3px solid #41c0ce;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 700;
+    background: #037E8C;
+    transform: translateY(-110%);
+}
+
+.skip-link:focus {
+    transform: translateY(20%);
+}
 
 .wrapper {
     overflow: hidden;
@@ -406,6 +447,7 @@
     border: 1.5px solid #037E8C;
     padding: 1.1rem 3.9rem;
     transition: all 0.5s;
+    background-color: #fff;
 }
 
 .rates__btn:hover {
@@ -589,6 +631,7 @@
     font-weight: 700;
     margin-bottom: .5rem;
     padding-left: .8rem;
+    color: #036a75;
 }
 
 .team__job {
@@ -743,6 +786,12 @@
     border: 1.5px solid #037E8C;
     padding: .8rem 3.0rem;
     margin-top: 1.0rem;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.special__btn:hover {
+    background-color: #ececec;
 }
 
 
@@ -1120,7 +1169,7 @@ summary::marker {
     text-decoration: none;
 }
 
-footer__item a {
+.footer__item a {
     transition: all 0.3s;
 }
 
@@ -1145,7 +1194,7 @@ footer__item a {
     content: "";
     background: #121214;
     width: 100%;
-    height: 0.5px;
+    height: 0.05rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -1155,7 +1204,7 @@ footer__item a {
     content: "";
     background: #121214;
     width: 100%;
-    height: 0.5px;
+    height: 0.05rem;
     position: absolute;
     top: 100%;
     left: 0;
@@ -1163,7 +1212,7 @@ footer__item a {
 
 
 .footer__text {
-    color: #787878;
+    color: #575757;
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 1.0rem;
@@ -1181,6 +1230,10 @@ footer__item a {
     }
 
     .team__item {}
+
+    .team__name {
+        color: #036a75;
+    }
 }
 
 
@@ -1333,6 +1386,7 @@ footer__item a {
         margin-bottom: .5rem;
         padding-left: 1.5rem;
         margin-top: 1.5rem;
+        color: #037E8C;
     }
 
     .team__job {
@@ -1604,8 +1658,8 @@ footer__item a {
 
 
     .header__logo img {
-        width: 110px;
-        height: 140px;
+        width: 11rem;
+        height: 14rem;
     }
 
     .header__container {
@@ -1621,24 +1675,24 @@ footer__item a {
 
     .header__menu {
         display: block;
-        margin-top: 30px;
+        margin-top: 3rem;
     }
 
     .menu {
         display: flex;
-        column-gap: 50px;
+        column-gap: 5rem;
     }
 
     .menu__item {
-        margin-top: 5px;
+        margin-top: 0.5rem;
     }
 
     .menu__item:last-child {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin-top: 0px;
-        margin-left: 80px;
+        margin-top: 0rem;
+        margin-left: 8rem;
     }
 
     .menu__item:last-child::before {
@@ -1649,8 +1703,8 @@ footer__item a {
         background-repeat: no-repeat;
         display: inline-block;
         position: absolute;
-        top: 2px;
-        left: -30px;
+        top: 0.2rem;
+        left: -3rem;
     }
 
     .menu__link {
@@ -1665,8 +1719,8 @@ footer__item a {
         color: #FFF;
         font-size: 2rem;
         font-weight: 600;
-        letter-spacing: 0.4px;
-        margin-bottom: 10px;
+        letter-spacing: 0.04rem;
+        margin-bottom: 1rem;
         transition: all 0.3s;
     }
 
@@ -1682,7 +1736,7 @@ footer__item a {
         color: #FFF;
         font-size: 1.4rem;
         font-weight: 600;
-        padding: 12px 20px;
+        padding: 1.2rem 2rem;
         border-radius: 9px;
         background: rgba(255, 255, 255, 0.40);
         transition: all 0.5s;
@@ -1721,7 +1775,7 @@ footer__item a {
 
 
     .gallery__title {
-        font-size: 70px;
+        font-size: 7rem;
         font-weight: 800;
         line-height: 8.785rem;
         letter-spacing: .315rem;
@@ -1730,7 +1784,7 @@ footer__item a {
     }
 
     .gallery__text {
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 500;
         line-height: 2.6rem;
         margin-bottom: 8rem;
@@ -1750,19 +1804,19 @@ footer__item a {
 
     .gallery__slides {
         transform: rotate(-270deg);
-        height: 300px;
+        height: 30rem;
         align-items: start;
         padding-top: 5rem;
     }
 
 
     .gallery__slide {
-        margin-top: 3px;
+        margin-top: 0.3rem;
     }
 
 
     .gallery__line {
-        height: 14px;
+        height: 1.4rem;
     }
 
     .scroll {}
@@ -1770,8 +1824,8 @@ footer__item a {
 
 
     .advantages {
-        margin-top: 50px;
-        margin-bottom: 30px;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
     }
 
     .advantages__container {
@@ -1791,14 +1845,14 @@ footer__item a {
     }
 
     .item__icon {
-        width: 60px;
-        height: 45px;
-        margin-bottom: 20px;
+        width: 6rem;
+        height: 4.5rem;
+        margin-bottom: 2rem;
     }
 
     .item__title {
         font-size: 1.8rem;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 
     .item__text {
@@ -1811,8 +1865,8 @@ footer__item a {
     }
 
     .routes__container {
-        margin-top: 57px;
-        margin-bottom: 120px;
+        margin-top: 5.7rem;
+        margin-bottom: 12rem;
         max-width: 144rem;
         padding-right: 5rem;
         padding-left: 5rem;
@@ -2031,6 +2085,7 @@ footer__item a {
         margin-bottom: .5rem;
         padding-left: 2.5rem;
         margin-top: 1.5rem;
+        color: #037E8C;
     }
 
     .team__job {

@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#routes">
+        Перейти к контенту
+    </a>
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
@@ -41,7 +44,8 @@
                     </ul>
                 </nav>
                 <button class="header__btn">
-                    <img src="/img/header_menu.svg" alt="Бургер">
+                    <img src="/img/header_menu.svg" alt="Меню">
+                    <span class="sr-only">Меню навигации</span>
                 </button>
             </div>
         </header>
@@ -61,9 +65,15 @@
                         </a>
                     </div>
                     <div class="gallery__slides slides">
-                        <button class="gallery__slide slide"></button>
-                        <button class="gallery__slide slide"></button>
-                        <button class="gallery__slide slide"></button>
+                        <button class="gallery__slide slide">
+                            <span class="sr-only">Первый слайд галереи</span>
+                        </button>
+                        <button class="gallery__slide slide">
+                            <span class="sr-only">Второй слайд галереи</span>
+                        </button>
+                        <button class="gallery__slide slide">
+                            <span class="sr-only">Третий слайд галереи</span>
+                        </button>
                         <svg class="gallery__line line" width="54" height="2" viewBox="0 0 54 1" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <line x1="54" y1="0.5" y2="0.5" stroke="white" />
@@ -77,29 +87,29 @@
                 <div class="advantages__container">
                     <ul class="advantages__list">
                         <li class="advantages__item">
-                            <img class="item__icon" src="img/advantages_icon1.svg" alt="Иконка">
-                            <h3 class="item__title">Увлекательные экскурсии</h3>
+                            <img class="item__icon" src="img/advantages_icon1.svg" alt="Экскурсии">
+                            <p class="item__title">Увлекательные экскурсии</p>
                             <p class="item__text">
                                 Маршруты от лесных дорожек
                                 до полного бездорожья!
                             </p>
                         </li>
                         <li class="advantages__item">
-                            <img class="item__icon" src="img/advantages_icon2.svg" alt="Иконка">
-                            <h3 class="item__title">Надежная техника</h3>
+                            <img class="item__icon" src="img/advantages_icon2.svg" alt="Техника">
+                            <p class="item__title">Надежная техника</p>
                             <p class="item__text">18 квадроциклов всех японских брендов</p>
                         </li>
                         <li class="advantages__item">
-                            <img class="item__icon" src="img/advantages_icon3.svg" alt="Иконка">
-                            <h3 class="item__title">Экипировка бесплатно</h3>
+                            <img class="item__icon" src="img/advantages_icon3.svg" alt="Экипировка">
+                            <p class="item__title">Экипировка бесплатно</p>
                             <p class="item__text">
                                 Необходимая экипировка
                                 выдается бесплатно
                             </p>
                         </li>
                         <li class="advantages__item">
-                            <img class="item__icon" src="img/advantages_icon4.svg" alt="Иконка">
-                            <h3 class="item__title">Опытные инструктора</h3>
+                            <img class="item__icon" src="img/advantages_icon4.svg" alt="Инструктора">
+                            <p class="item__title">Опытные инструктора</p>
                             <p class="item__text">Обеспечат полную безопасность Вашего отдыха</p>
                         </li>
                     </ul>
@@ -116,15 +126,15 @@
                                 <p class="rates__price">от 4000 ₽</p>
                                 <ul class="rates__list">
                                     <li>
-                                        <img src="img/routes_time.svg" alt="время">
+                                        <img src="img/routes_time.svg" alt="">
                                         <p><span class="uppercase">Время в пути:</span> 1,5 - 2 часа</p>
                                     </li>
                                     <li>
-                                        <img src="img/routes_point.svg" alt="точка">
+                                        <img src="img/routes_point.svg" alt="">
                                         <p><span class="uppercase">Расстояние:</span> 20 - 25 км</p>
                                     </li>
                                     <li>
-                                        <img src="img/routes_star.svg" alt="звезда">
+                                        <img src="img/routes_star.svg" alt="">
                                         <p><span class="uppercase">Сложность:</span> 5***</p>
                                     </li>
                                 </ul>
@@ -146,7 +156,7 @@
                                                 <source srcset="img/routes_car1_desktop.jpg"
                                                     media="(min-width: 1280px)">
                                                 <source srcset="img/routes_car1_desktop.jpg" media="(min-width: 768px)">
-                                                <img src="img/routes_car1.jpg" alt="Картинка">
+                                                <img src="img/routes_car1.jpg" alt="Фотография маршрута">
                                             </picture>
                                         </li>
                                         <li class="rates__image">
@@ -154,7 +164,7 @@
                                                 <source srcset="img/routes_car2_desktop.jpg"
                                                     media="(min-width: 1280px)">
                                                 <source srcset="img/routes_car2_desktop.jpg" media="(min-width: 768px)">
-                                                <img src="img/routes_car2.jpg" alt="Картинка">
+                                                <img src="img/routes_car2.jpg" alt="Фотография маршрута">
                                             </picture>
                                         </li>
                                         <li class="rates__image">
@@ -163,14 +173,20 @@
                                                     media="(min-width: 1280px)">
                                                 <source srcset="img/routes_car3_desktop.jpg" media="(min-width: 768px)">
 
-                                                <img src="img/routes_car3.jpg" alt="Картинка">
+                                                <img src="img/routes_car3.jpg" alt="Фотография маршрута">
                                             </picture>
                                         </li>
                                     </ul>
                                     <div class="routes__slides slides">
-                                        <button class="routes__slide slide"></button>
-                                        <button class="routes__slide slide"></button>
-                                        <button class="routes__slide slide"></button>
+                                        <button class="routes__slide slide">
+                                            <span class="sr-only">Первый слайд базовый маршрут</span>
+                                        </button>
+                                        <button class="routes__slide slide">
+                                            <span class="sr-only">Второй слайд базовый маршрут</span>
+                                        </button>
+                                        <button class="routes__slide slide">
+                                            <span class="sr-only">Третий слайд базовый маршрут</span>
+                                        </button>
                                         <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
@@ -186,15 +202,15 @@
                                 <p class="rates__price">от 16000 ₽</p>
                                 <ul class="rates__list">
                                     <li>
-                                        <img src="img/routes_time.svg" alt="время">
+                                        <img src="img/routes_time.svg" alt="">
                                         <p><span class="uppercase">Время в пути:</span> 6 - 8 часов</p>
                                     </li>
                                     <li>
-                                        <img src="img/routes_point.svg" alt="точка">
+                                        <img src="img/routes_point.svg" alt="">
                                         <p><span class="uppercase">Расстояние:</span> 60 - 70 км</p>
                                     </li>
                                     <li>
-                                        <img src="img/routes_star.svg" alt="звезда">
+                                        <img src="img/routes_star.svg" alt="">
                                         <p><span class="uppercase">Сложность:</span> 5***</p>
                                     </li>
                                 </ul>
@@ -216,7 +232,7 @@
                                                 <source srcset="img/routes_car4_desktop.jpg"
                                                     media="(min-width: 1280px)">
                                                 <source srcset="img/routes_car4_desktop.jpg" media="(min-width: 768px)">
-                                                <img src="img/routes_car4.jpg" alt="Картинка">
+                                                <img src="img/routes_car4.jpg" alt="Фотография маршрута">
                                             </picture>
                                         </li>
                                         <li class="rates__image">
@@ -224,7 +240,7 @@
                                                 <source srcset="img/routes_car5_desktop.jpg"
                                                     media="(min-width: 1280px)">
                                                 <source srcset="img/routes_car5_desktop.jpg" media="(min-width: 768px)">
-                                                <img src="img/routes_car5.jpg" alt="Картинка">
+                                                <img src="img/routes_car5.jpg" alt="Фотография маршрута">
                                             </picture>
                                         </li>
                                         <li class="rates__image">
@@ -232,14 +248,20 @@
                                                 <source srcset="img/routes_car6_desktop.jpg"
                                                     media="(min-width: 1280px)">
                                                 <source srcset="img/routes_car6_desktop.jpg" media="(min-width: 768px)">
-                                                <img src="img/routes_car6.jpg" alt="Картинка">
+                                                <img src="img/routes_car6.jpg" alt="Фотография маршрута">
                                             </picture>
                                         </li>
                                     </ul>
                                     <div class="routes__slides slides">
-                                        <button class="routes__slide slide"></button>
-                                        <button class="routes__slide slide"></button>
-                                        <button class="routes__slide slide"></button>
+                                        <button class="routes__slide slide">
+                                            <span class="sr-only">Первый слайд расширенный маршрут</span>
+                                        </button>
+                                        <button class="routes__slide slide">
+                                            <span class="sr-only">Второй слайд расширенный маршрут</span>
+                                        </button>
+                                        <button class="routes__slide slide">
+                                            <span class="sr-only">Третий слайд расширенный маршрут</span>
+                                        </button>
                                         <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
@@ -255,15 +277,15 @@
                                 <p class="rates__price">от 7000 ₽</p>
                                 <ul class="rates__list">
                                     <li>
-                                        <img src="img/routes_time.svg" alt="звезда">
+                                        <img src="img/routes_time.svg" alt="">
                                         <p><span class="uppercase">Время в пути:</span> 4 часа</p>
                                     </li>
                                     <li>
-                                        <img src="img/routes_point.svg" alt="звезда">
+                                        <img src="img/routes_point.svg" alt="">
                                         <p<span class="uppercase">Расстояние:</span> 40 - 50 км</p>
                                     </li>
                                     <li>
-                                        <img src="img/routes_star.svg" alt="звезда">
+                                        <img src="img/routes_star.svg" alt="">
                                         <p><span class="uppercase">Сложность:</span> 5***</p>
                                     </li>
                                 </ul>
@@ -285,7 +307,7 @@
                                                 <source srcset="img/routes_car7_desktop.jpg"
                                                     media="(min-width: 1280px)">
                                                 <source srcset="img/routes_car7_desktop.jpg" media="(min-width: 768px)">
-                                                <img src="img/routes_car7.jpg" alt="Картинка">
+                                                <img src="img/routes_car7.jpg" alt="Фотография маршрута">
                                             </picture>
                                         </li>
                                         <li class="rates__image">
@@ -293,7 +315,7 @@
                                                 <source srcset="img/routes_car8_desktop.jpg"
                                                     media="(min-width: 1280px)">
                                                 <source srcset="img/routes_car8_desktop.jpg" media="(min-width: 768px)">
-                                                <img src="img/routes_car8.jpg" alt="Картинка">
+                                                <img src="img/routes_car8.jpg" alt="Фотография маршрута">
                                             </picture>
                                         </li>
                                         <li class="rates__image">
@@ -301,14 +323,20 @@
                                                 <source srcset="img/routes_car9_desktop.jpg"
                                                     media="(min-width: 1280px)">
                                                 <source srcset="img/routes_car9_desktop.jpg" media="(min-width: 768px)">
-                                                <img src="img/routes_car9.jpg" alt="Картинка">
+                                                <img src="img/routes_car9.jpg" alt="Фотография маршрута">
                                             </picture>
                                         </li>
                                     </ul>
                                     <div class="routes__slides slides">
-                                        <button class="routes__slide slide"></button>
-                                        <button class="routes__slide slide"></button>
-                                        <button class="routes__slide slide"></button>
+                                        <button class="routes__slide slide">
+                                            <span class="sr-only">Первый слайд продвинутый маршрут</span>
+                                        </button>
+                                        <button class="routes__slide slide">
+                                            <span class="sr-only">Второй слайд продвинутый маршрут</span>
+                                        </button>
+                                        <button class="routes__slide slide">
+                                            <span class="sr-only">Третий слайд продвинутый маршрут</span>
+                                        </button>
                                         <svg class="line" width="54" height="2" viewBox="0 0 54 1" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <line x1="54" y1="0.5" y2="0.5" stroke="#121214" />
@@ -340,7 +368,7 @@
                             <picture>
                                 <source srcset="img/team1_desktop.jpg" media="(min-width: 1280px)">
                                 <source srcset="img/team1_desktop.jpg" media="(min-width: 768px)">
-                                <img class="team__photo" src="img/team1.jpg" alt="Фото">
+                                <img class="team__photo" src="img/team1.jpg" alt="Юлиана">
                             </picture>
                             <h3 class="team__name">Юлиана</h3>
                             <p class="team__job">руководитель</p>
@@ -349,7 +377,7 @@
                             <picture>
                                 <source srcset="img/team2_desktop.jpg" media="(min-width: 1280px)">
                                 <source srcset="img/team2_desktop.jpg" media="(min-width: 768px)">
-                                <img class="team__photo" src="img/team2.jpg" alt="Фото">
+                                <img class="team__photo" src="img/team2.jpg" alt="Максим">
                             </picture>
                             <h3 class="team__name">Максим</h3>
                             <p class="team__job">старший инструктор</p>
@@ -358,7 +386,7 @@
                             <picture>
                                 <source srcset="img/team3_desktop.jpg" media="(min-width: 1280px)">
                                 <source srcset="img/team3_desktop.jpg" media="(min-width: 768px)">
-                                <img class="team__photo" src="img/team3.jpg" alt="Фото">
+                                <img class="team__photo" src="img/team3.jpg" alt="Кристина">
                             </picture>
                             <h3 class="team__name">Кристина</h3>
                             <p class="team__job">администратор</p>
@@ -367,7 +395,7 @@
                             <picture>
                                 <source srcset="img/team4_desktop.jpg" media="(min-width: 1280px)">
                                 <source srcset="img/team4_desktop.jpg" media="(min-width: 768px)">
-                                <img class="team__photo" src="img/team4.jpg" alt="Фото">
+                                <img class="team__photo" src="img/team4.jpg" alt="Юрий">
                             </picture>
                             <h3 class="team__name">Юрий</h3>
                             <p class="team__job">старший механик</p>
@@ -428,7 +456,7 @@
                         <li class="special__item">
                             <picture>
                                 <source srcset="img/special1_desktop.jpg" media="(min-width: 1280px)">
-                                <img class="special__img" src="img/special1.jpg" alt="Картинка">
+                                <img class="special__img" src="img/special1.jpg" alt="Подарок">
                             </picture>
                             <div class="special__wrapper-text">
                                 <p class="special__sale">Скидка 10%</p>
@@ -440,7 +468,7 @@
                         <li class="special__item">
                             <picture>
                                 <source srcset="img/special2_desktop.jpg" media="(min-width: 1280px)">
-                                <img class="special__img" src="img/special2.jpg" alt="Картинка">
+                                <img class="special__img" src="img/special2.jpg" alt="Загородный клуб">
                             </picture>
                             <div class="special__wrapper-text">
                                 <p class="special__sale">Скидка 10%</p>
@@ -461,14 +489,14 @@
                         Подарите незабываемые эмоции - лучший подарок!</p>
                     <div class="certificate__wrapper">
                         <div class="certificate__card card">
-                            <img class="card__bow" src="img/certificate_bow.svg" alt="Бант">
+                            <img class="card__bow" src="img/certificate_bow.svg" alt="">
                             <p class="card__title">СЕРТИФИКАТ</p>
                             <div class="card__content">
                                 <div class="card__wrapper">
                                     <p class="card__text">Катание на квадроциклах</p>
                                     <p class="card__description">Маршрут: Лесная прогулка</p>
                                 </div>
-                                <img class="card__logo" src="img/certificate__logo.svg" alt="Логотип">
+                                <img class="card__logo" src="img/certificate__logo.svg" alt="Логотип CFMOTO">
                             </div>
                         </div>
                         <div class="certificate__content">
@@ -496,7 +524,7 @@
                                 <details class="accordion__item">
                                     <summary class="accordion__title">
                                         <h2 class="questions__name">Актуальный вопрос?</h2>
-                                        <img src="img/arrow.svg" alt="стрелка">
+                                        <img src="img/arrow.svg" alt="">
                                     </summary>
                                     <p class="questions__answer">Lorem Ipsum is simply dummy text of the printing and
                                         typesetting
@@ -511,7 +539,7 @@
                                 <details class="accordion__item">
                                     <summary class="accordion__title">
                                         <h2 class="questions__name">Актуальный вопрос?</h2>
-                                        <img src="img/arrow.svg" alt="стрелка">
+                                        <img src="img/arrow.svg" alt="">
                                     </summary>
                                     <p class="questions__answer">Lorem Ipsum is simply dummy text of the printing and
                                         typesetting
@@ -526,7 +554,7 @@
                                 <details class="accordion__item">
                                     <summary class="accordion__title">
                                         <h2 class="questions__name">Актуальный вопрос?</h2>
-                                        <img src="img/arrow.svg" alt="стрелка">
+                                        <img src="img/arrow.svg" alt="">
                                     </summary>
                                     <p class="questions__answer">Lorem Ipsum is simply dummy text of the printing and
                                         typesetting
@@ -541,7 +569,7 @@
                                 <details class="accordion__item">
                                     <summary class="accordion__title">
                                         <h2 class="questions__name">Актуальный вопрос?</h2>
-                                        <img src="img/arrow.svg" alt="стрелка">
+                                        <img src="img/arrow.svg" alt="">
                                     </summary>
                                     <p class="questions__answer">Lorem Ipsum is simply dummy text of the printing and
                                         typesetting
@@ -554,7 +582,7 @@
                             </li>
                         </ul>
                         <div class="feedback">
-                            <img class="feedback__img" src="img/feedback__icon.svg" alt="Иконка">
+                            <img class="feedback__img" src="img/feedback__icon.svg" alt="">
                             <h2 class="feedback__text">Есть вопросы?</h2>
                             <p class="feedback__description">Не стесняйтесь обращаться к нам, если у вас есть какие-либо
                                 вопросы,
@@ -573,20 +601,20 @@
                         <img class="contacts__map" src="img/contacts_map.jpg" alt="Карта">
                         <ul class="contacts__list">
                             <li class="contacts__item">
-                                <img class="contacts__img" src="img/contacts_home.svg" alt="Иконка">
+                                <img class="contacts__img" src="img/contacts_home.svg" alt="">
                                 <p class="contacts__text">Город Геленджик</p>
                             </li>
                             <li class="contacts__item">
-                                <img class="contacts__img" src="img/contacts_mail.svg" alt="Иконка">
+                                <img class="contacts__img" src="img/contacts_mail.svg" alt="">
                                 <a class="contacts__text"
                                     href="mailto:experience@groupgrand.ru">experience@groupgrand.ru</a>
                             </li>
                             <li class="contacts__item">
-                                <img class="contacts__img" src="img/contacts_phone.svg" alt="Иконка">
+                                <img class="contacts__img" src="img/contacts_phone.svg" alt="">
                                 <a class="contacts__text" href="tel:+79283332645">+7 928 428-00-62</a>
                             </li>
                             <li class="contacts__item">
-                                <img class="contacts__img" src="img/contacts_time.svg" alt="Иконка">
+                                <img class="contacts__img" src="img/contacts_time.svg" alt="">
                                 <div class="contacts__text">
                                     <p>Пн - Пт: 9:00 - 18:00</p>
                                     <p>Сб: 9:00 - 17:00</p>
@@ -598,9 +626,11 @@
                             <p class="contacts__socials">Написать нам:</p>
                             <a class="contacts__social" href="#">
                                 <img src="img/contacts_whatsapp.svg" alt="WhatsApp">
+                                <span class="sr-only">Ссылка WhatsApp</span>
                             </a>
                             <a class="contacts__social" href="#">
                                 <img src="img/contacts_instagram.svg" alt="Instagram">
+                                <span class="sr-only">Ссылка Instagram</span>
                             </a>
                         </div>
                     </div>

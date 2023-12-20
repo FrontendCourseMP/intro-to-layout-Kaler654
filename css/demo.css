@@ -87,8 +87,8 @@
 }
 
 .marquee {
-    height: 25px;
-    width: 420px;
+    height: 3rem;
+    width: 40rem;
 
     overflow: hidden;
     position: relative;
@@ -96,16 +96,18 @@
 
 .marquee__wrapper {
     width: 200%;
-    height: 30px;
+    height: 3.5rem;
     position: absolute;
     overflow: hidden;
 
     animation: marquee 5s linear infinite;
+    display: flex;
 }
 
 .marquee span {
-    float: left;
     width: 50%;
+    font-size: 2rem;
+    white-space: nowrap;
 }
 
 @keyframes marquee {
