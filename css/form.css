@@ -192,3 +192,78 @@ input[type="password"] {
     font-size: 5rem;
     padding-bottom: 0.5rem;
 }
+
+
+
+
+.footer__logo {
+    transform: rotate(30deg) scale(1.5) skew(20deg, 20deg);
+}
+
+
+.form__input:has(input:focus) label {
+    color: red;
+}
+
+
+.radio__item:has(input:focus) label {
+    color: red;
+}
+
+
+.radio__item:has(input:checked) label {
+    color: green;
+    font-weight: 700;
+}
+
+
+input:required {
+    border: 2px solid red;
+}
+
+
+
+.block {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.block__container {
+    margin: 0px auto;
+    max-width: 85rem;
+}
+
+dt {
+    font-size: 2rem;
+}
+
+dt::first-letter {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: red;
+}
+
+dd {
+    font-size: 2rem;
+    padding-left: 5rem;
+    margin-top: 1rem;
+}
+
+dd::before {
+    content: "🛈";
+    font-size: 2rem;
+    color: red;
+}
+
+
+input[type=checkbox]:checked+label {
+    text-decoration: line-through;
+}
+
+.pseudo-class>dd:nth-child(even)>label {
+    color: green;
+}
+
+.pseudo-element>dd:nth-child(odd)>label {
+    color: green;
+}

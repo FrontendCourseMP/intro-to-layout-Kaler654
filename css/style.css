@@ -75,6 +75,12 @@
 }
 
 
+::selection {
+    background-color: #037E8C;
+    color: #ffffff;
+}
+
+
 .wrapper {
     overflow: hidden;
     display: flex;
@@ -120,6 +126,19 @@
 
 .header__menu {
     display: none;
+}
+
+.menu__link {
+    transition: all 0.3s;
+}
+
+.menu__link:hover {
+    color: #037E8C;
+}
+
+
+.menu__link:active {
+    color: #005c66;
 }
 
 .main {}
@@ -170,7 +189,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s;
+    transition: all 0.5s;
 
+}
+
+
+.gallery__btn:hover {
+    background: #005c66;
+    transition: all 0.5s;
+}
+
+.gallery__btn:hover.gallery__btn>img {
+    rotate: 90deg;
+    transition: all 0.5s;
+}
+
+.gallery__btn:active {
+    background: rgba(1, 105, 116, 0.685)
 }
 
 
@@ -369,6 +405,16 @@
     border-radius: .9rem;
     border: 1.5px solid #037E8C;
     padding: 1.1rem 3.9rem;
+    transition: all 0.5s;
+}
+
+.rates__btn:hover {
+    background: #037E8C;
+    color: #fff;
+}
+
+.rates__btn:active {
+    background-color: #005c66;
 }
 
 .rates__link {
@@ -380,6 +426,18 @@
     background: #037E8C;
     padding: 1.1rem 2.5rem;
     text-decoration: none;
+    transition: all 0.5s;
+}
+
+
+.rates__link:hover {
+    background: transparent;
+    border: 1.5px solid #037E8C;
+    color: #037E8C;
+}
+
+.rates__link:active {
+    background: #7e7e7e3a
 }
 
 .rates__wrapper {
@@ -461,6 +519,15 @@
     font-weight: 600;
     color: #fff;
     padding: 1.4rem 4.4rem;
+    transition: all 0.5s;
+}
+
+.testing__btn:hover {
+    background-color: #005c66;
+}
+
+.testing__btn:active {
+    text-decoration: underline;
 }
 
 
@@ -794,6 +861,17 @@
     display: block;
     background-color: transparent;
     max-width: 30rem;
+    transition: 0.5s all;
+}
+
+.certificate__btn:hover {
+    color: #fff;
+    background-color: #037E8C;
+}
+
+.certificate__btn:active {
+    color: #fff;
+    background-color: #005c66;
 }
 
 
@@ -893,7 +971,19 @@
     background: #037E8C;
     padding: 1.3rem 3.3rem;
     text-align: center;
+    transition: all 0.5s;
 
+}
+
+
+.feedback__btn:hover {
+    color: #037E8C;
+    background-color: transparent;
+    border: 1.5px solid #037E8C;
+}
+
+.feedback__btn:active {
+    background: #7e7e7e3a
 }
 
 summary::marker {
@@ -1028,6 +1118,18 @@ summary::marker {
 .footer__item a {
     color: #121214;
     text-decoration: none;
+}
+
+footer__item a {
+    transition: all 0.3s;
+}
+
+.footer__item a:hover {
+    color: #037E8C;
+}
+
+.footer__item a:active {
+    color: #005c66;
 }
 
 .footer__wrapper {
@@ -1565,6 +1667,15 @@ summary::marker {
         font-weight: 600;
         letter-spacing: 0.4px;
         margin-bottom: 10px;
+        transition: all 0.3s;
+    }
+
+    .phone-number:hover {
+        color: #037E8C;
+    }
+
+    .phone-number:active {
+        color: #005c66;
     }
 
     .phone-btn {
@@ -1574,6 +1685,15 @@ summary::marker {
         padding: 12px 20px;
         border-radius: 9px;
         background: rgba(255, 255, 255, 0.40);
+        transition: all 0.5s;
+    }
+
+    .phone-btn:hover {
+        background-color: #037E8C;
+    }
+
+    .phone-btn:active {
+        background-color: #005c66;
     }
 
 

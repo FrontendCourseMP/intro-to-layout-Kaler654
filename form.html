@@ -54,15 +54,15 @@
                         <h1 class="form__title">Форма регистрации</h1>
                         <p class="form__notification">
                             Помеченные поля обязательны для заполнения
-                            <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                            <strong><abbr class="required" title="required">*</abbr></strong>
                         </p>
 
                         <fieldset class="form__section">
                             <legend class="form__subtitle">Личная информация</legend>
                             <p class="form__input">
                                 <label for="name">
-                                    <span>Имя: </span>
-                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                    <span class="test">Имя: </span>
+                                    <strong><abbr class="required" title="required">*</abbr></strong>
                                 </label>
                                 <input type="text" id="name" name="user_name" tabindex="1" required />
                             </p>
@@ -70,7 +70,7 @@
                             <p class="form__input">
                                 <label for="birthday">
                                     <span>Дата рождения: </span>
-                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                    <strong><abbr class="required" title="required">*</abbr></strong>
                                 </label>
                                 <input placeholder="123" type="date" id="birthday" name="user_birthday" tabindex="2"
                                     required />
@@ -98,7 +98,7 @@
                             <p class="form__input">
                                 <label for="password">
                                     <span>Пароль: </span>
-                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                    <strong><abbr class="required" title="required">*</abbr></strong>
                                 </label>
                                 <input type="password" id="password" name="user_password" tabindex="4" required />
                             </p>
@@ -109,7 +109,7 @@
                             <p class="form__input">
                                 <label for="email">
                                     <span>Почта: </span>
-                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                    <strong><abbr class="required" title="required">*</abbr></strong>
                                 </label>
                                 <input type="email" id="email" name="user_email" placeholder="email@example.ru"
                                     tabindex="5" required />
@@ -117,7 +117,7 @@
                             <p class="form__input">
                                 <label for="phone">
                                     <span>Телефон: </span>
-                                    <strong><abbr class="required" title="required">*</abbr class="required"></strong>
+                                    <strong><abbr class="required" title="required">*</abbr></strong>
                                 </label>
                                 <input type="tel" id="phone" name="user_phone" placeholder="+7 (000) 000 00 00"
                                     tabindex="6" required />
@@ -140,6 +140,112 @@
                             <button class="submit" type="submit" tabindex="8">Отправить</button>
                             <button class="reset" type="reset" tabindex="9">Сбросить</button>
                         </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="block">
+                <div class="block__container">
+                    <form action="#" class="block__form">
+                        <dl>
+                            <div class="pseudo-class">
+                                <dt>Псевдоклассы</dt>
+                                <dd> особый вид селектора, который уточняет тип или состояние. Обычно это какой-то
+                                    качественный
+                                    признак: реакция на наведение курсора, порядок следования и другие.</dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="hover" value="check_hover" checked>
+                                    <label for="hover">:hover</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="active" value="check_active" checked>
+                                    <label for="active">:active</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="focus" value="check_focus" checked>
+                                    <label for="focus">:focus</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="checked" value="check_checked" checked>
+                                    <label for="checked">:checked</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="empty" value="check_empty">
+                                    <label for="empty">:empty</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="root" value="check_root" checked>
+                                    <label for="root">:root</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="required" value="check_required" checked>
+                                    <label for="required">:required</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="lang" value="check_lang">
+                                    <label for="lang">:lang</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="has" value="check_has" checked>
+                                    <label for="has">:has</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="first-child" value="check_first-child"
+                                        checked>
+                                    <label for="first-child">:first-child</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="last-child" value="check_last-child"
+                                        checked>
+                                    <label for="last-child">:last-child</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="nth-child" value="check_nth-child"
+                                        checked>
+                                    <label for="nth-child">:nth-child</label>
+                                </dd>
+                            </div>
+
+                            <div class="pseudo-element">
+                                <dt>Псевдоэлементы</dt>
+                                <dd>Псевдоэлементы — это элементы, которых не существует в HTML-разметке. Они создаются
+                                    и
+                                    позиционируются исключительно при помощи CSS. Чаще всего используются для создания
+                                    различных
+                                    декоративных элементов (которые не несут содержательного смысла).</dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="before" value="check_before" checked>
+                                    <label for="before">::before</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="after" value="check_after" checked>
+                                    <label for="after">::after</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="first-letter" value="check_first-letter"
+                                        checked>
+                                    <label for="first-letter">::first-letter</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="first-line" value="check_first-line">
+                                    <label for="first-line">::first-line</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="selection" value="check_selection"
+                                        checked>
+                                    <label for="selection">::selection</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="placeholder" value="check_placeholder">
+                                    <label for="placeholder">::placeholder</label>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox" name="checked" id="marker" value="check_marker">
+                                    <label for="marker">::marker</label>
+                                </dd>s
+                            </div>
+
+                        </dl>
                     </form>
                 </div>
             </section>
@@ -166,7 +272,7 @@
                             <a href="#conditions">Условия</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#special">Спецпредложения</a>
+                            <a href="./demo.html">DEMO</a>
                         </li>
                         <li class="footer__item">
                             <a href="./index.html">CFMOTO</a>
