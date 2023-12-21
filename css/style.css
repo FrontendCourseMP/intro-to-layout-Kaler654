@@ -189,7 +189,7 @@ summary:focus {
 
 
 .gallery {
-    background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%), url("../img/gallery_background.jpg"), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%), url("../img/gallery_background.webp"), lightgray 50% / cover no-repeat;
     background-position: center;
     font-family: 'Montserrat', sans-serif;
     color: var(--text-secondary);
@@ -1754,7 +1754,7 @@ summary::marker {
 
 
     .gallery {
-        background-image: url("../img/gallery_background_desktop.jpg");
+        background-image: url("../img/gallery_background_desktop.webp");
         background-size: cover;
         background-position: center;
         background-size: cover;
